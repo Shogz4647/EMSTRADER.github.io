@@ -1,0 +1,544 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'montserrat','sans-serif';
+}
+body{
+    overflow-x: hidden;
+}
+/* TO TOP BTN */
+.to-top-btn{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #0F25C9;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.to-top-btn:hover{
+    background-color: #0b1c9d;
+}
+.to-top-btn.show{
+    opacity: 1;
+    visibility: visible;
+}
+/* HEADER SECTION INCLUDING NAVBAR & SEARCH BAR */
+header{
+    height: 100vh; 
+    background-image: url(./images/financial-business-chart-with-diagrams-stock-numbers-showing-profits-losses_273081-440.avif);
+    background-size: cover;
+    background-repeat:no-repeat;   
+}
+header > nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #05052bc2;
+    padding: 12px 0;
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+header > nav > .nav-links-grp1{
+    display: flex;
+    align-items: center;
+    gap: 150px;
+}
+header > nav > .nav-links-grp1 > .logo{
+    padding-left: 60px;
+}
+header > nav > .nav-links-grp1 > .logo > img{
+    width: 220px;
+}
+header > nav > .nav-links-grp1 > .nav-links{
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+header > nav > .nav-links-grp1 > .nav-links.translatedown{
+    transform: translateY(45px);
+}
+header > nav > .nav-links-grp1 > .nav-links > li > a{
+    text-decoration: none;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 15px;
+    font-weight: 300;
+    position: relative;
+}
+header > nav > .nav-links-grp1 > .nav-links > li > a::before{
+    content: "";
+    background-color: #fff;
+    height: 2%;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    transition: width 0.3s ease-in-out;
+}
+header > nav > .nav-links-grp1 > .nav-links > li > a:hover::before{
+    width: 100%;
+}
+header > nav > .nav-links-grp2{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding-right: 60px;
+}
+header > nav > .nav-links-grp2 > .search{
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+header > nav > .nav-links-grp2 > .search.hide{
+    opacity: 0;
+    visibility: hidden;
+}
+header > nav > .nav-links-grp2 > .search:hover{
+    color: #0F25C9;
+}
+
+header > nav > .nav-links-grp2 > .login{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #0F25C9;
+    transition: all 0.3s ease-in-out;
+}
+header > nav > .nav-links-grp2 > .login.hide{
+    opacity: 0;
+    visibility: hidden;
+}
+header > nav > .nav-links-grp2 > .register{
+    text-decoration: none;
+    color: #0F25C9;
+    border: 1px solid #0F25C9;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 20px;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+header > nav > .nav-links-grp2 > .register:hover{
+    background-color: #0F25C9 ;
+    color: #fff;
+}
+
+/* NAVLINKS DROPDOWNS */
+header > nav > .nav-links-grp1 > .nav-links > .mirror-trade > .mirror-trade-dropdown{
+    position: absolute;
+    background-color: #bfcce5;
+    margin-top:70px;
+    left: 35%;
+    list-style: none;
+    padding: 15px 20px;
+    width: 160px;
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+header > nav > .nav-links-grp1 > .nav-links > .about > .about-dropdown{
+    position: absolute;
+    background-color: #bfcce5;
+    margin-top:70px;
+    left: 52.7%;
+    list-style: none;
+    padding: 15px 20px;
+    width: 160px;
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+header > nav > .nav-links-grp1 > .nav-links > .planning > .planning-dropdown{
+    position: absolute;
+    background-color: #bfcce5;
+    margin-top:70px;
+    left: 44.5%;
+    list-style: none;
+    padding: 15px 20px;
+    width: 210px;
+    border-radius: 10px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+header > nav > .nav-links-grp1 > .nav-links > .about > .about-dropdown > ul,
+header > nav > .nav-links-grp1 > .nav-links > .planning > .planning-dropdown > ul,
+header > nav > .nav-links-grp1 > .nav-links > .mirror-trade > .mirror-trade-dropdown > ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+header > nav > .nav-links-grp1 > .nav-links > .mirror-trade > .mirror-trade-dropdown > ul > li > a,
+header > nav > .nav-links-grp1 > .nav-links > .planning > .planning-dropdown > ul > li > a,
+header > nav > .nav-links-grp1 > .nav-links > .about > .about-dropdown > ul > li > a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #2e2e2f;
+    font-weight: 400;
+    transition: color 0.3s ease-in-out;
+    position: relative;
+}
+
+header > nav > .nav-links-grp1 > .nav-links > .mirror-trade > .mirror-trade-dropdown > ul > li > a::before,
+header > nav > .nav-links-grp1 > .nav-links > .planning > .planning-dropdown > ul > li > a::before,
+header > nav > .nav-links-grp1 > .nav-links > .about > .about-dropdown > ul > li > a::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #2e2e2f;
+    width: 0;
+    height: 2%;
+    transition: width 0.3s ease-in-out;
+}
+
+header > nav > .nav-links-grp1 > .nav-links > .mirror-trade > .mirror-trade-dropdown > ul > li > a:hover::before,
+header > nav > .nav-links-grp1 > .nav-links > .planning > .planning-dropdown > ul > li > a:hover::before,
+header > nav > .nav-links-grp1 > .nav-links > .about > .about-dropdown > ul > li > a:hover::before{
+    width: 100%;
+}
+
+header > nav > .nav-links-grp1 > .nav-links > .about:hover .about-dropdown,
+header > nav > .nav-links-grp1 > .nav-links > .mirror-trade:hover .mirror-trade-dropdown,
+header > nav > .nav-links-grp1 > .nav-links > .planning:hover .planning-dropdown{
+    opacity: 1;
+    visibility: visible;
+    margin-top: 26px;
+}
+/* NAVLINKS DROPDOWNS */
+
+/* MAIN HEADER CONTENT */
+.header-content{
+    padding: 250px 0 0 80px;
+    width: 50%;
+}
+.header-content > .header-content-text > h1{
+    font-size: 47px;
+    color: #fff;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.header-content > .header-content-text > p{
+    font-size: 17px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.header-content > .header-content-btns{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.header-content > .header-content-btns > .login-btn-2,
+.header-content > .header-content-btns > .register-btn-2{
+    text-decoration: none;
+    width: 150px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+}
+.header-content > .header-content-btns > .login-btn-2::before,
+.header-content > .header-content-btns > .register-btn-2::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0f25c970;
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+}
+.header-content > .header-content-btns > .login-btn-2:hover::before,
+.header-content > .header-content-btns > .register-btn-2:hover::before{
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+.header-content > .header-content-btns > .login-btn-2:hover,
+.header-content > .header-content-btns > .register-btn-2:hover{
+    color: #0F25C9;
+    border: 1px solid #0F25C9;
+}
+/* HEADER SECTION INCLUDING NAVBAR & SEARCH BAR */
+
+/* COPY TRADING SECTION */
+.copy-trading{
+    padding: 100px 80px;
+    background-color: #e2f6ff;
+}
+.copy-trading > h1{
+    font-size: 60px;
+    color: #081150;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.copy-trading > .copy-trading-info{
+    background: linear-gradient(to bottom, #081150,#081050cc ), url(./images/header-bg-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    border-radius: 40px;
+    gap: 80px;
+    padding: 100px 50px;
+}
+.copy-trading > .copy-trading-info > .copy-trading-info-text {
+    width: 80%
+}
+.copy-trading > .copy-trading-info > .copy-trading-info-text > img {
+    margin-bottom: 20px;
+}
+.copy-trading > .copy-trading-info > .copy-trading-info-text > h2 {
+    font-size: 35px;
+    color: #fff;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.copy-trading > .copy-trading-info > .copy-trading-info-text > p {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+}
+.copy-trading > .copy-trading-info > .copy-trading-info-btn > a{
+    text-decoration: none;
+    width: 150px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+    margin-top: 130px;
+}
+.copy-trading > .copy-trading-info > .copy-trading-info-btn > a::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #0f25c970;
+    backdrop-filter: blur(5px);
+    border-radius: 30px;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+}
+.copy-trading > .copy-trading-info > .copy-trading-info-btn > a:hover{
+    color: #0F25C9;
+    border: 1px solid #0F25C9;
+}
+.copy-trading > .copy-trading-info > .copy-trading-info-btn > a:hover::before{
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+/* COPY TRADING SECTION */
+
+/* WHY TO COPYTRADE */
+.why-to-copytrade{
+    background-color: #000021;
+    padding: 100px 80px;
+}
+.why-to-copytrade > h1{
+    font-size: 40px;
+    text-align: center;
+    color: #D7EEF9;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.why-to-copytrade > p{
+    font-size: 18px;
+    text-align: center;
+    color: #D7EEF9;
+    margin-bottom: 40px;
+}
+.why-to-copytrade > .why-to-copytrade-reasons-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    width: 70%;
+}
+.why-to-copytrade > .why-to-copytrade-reasons-section > .why-to-copytrade-reasons{
+    display: flex;
+    align-items: first baseline;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    gap: 60px;
+}
+.why-to-copytrade > .why-to-copytrade-reasons-section > .why-to-copytrade-reasons > .why-to-copytrade-individual-reasons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+.why-to-copytrade > .why-to-copytrade-reasons-section > .why-to-copytrade-reasons > .why-to-copytrade-individual-reasons i{
+    font-size: 30px;
+    color: #D7EEF9;
+    background-color: #0F25C9;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+}
+.why-to-copytrade > .why-to-copytrade-reasons-section > .why-to-copytrade-reasons > .why-to-copytrade-individual-reasons h2{
+    font-size: 25px;
+    font-weight: 400;
+    color: #D7EEF9;
+}
+.why-to-copytrade > .why-to-copytrade-reasons-section > .why-to-copytrade-reasons > .why-to-copytrade-individual-reasons p{
+    font-size: 15px;
+    font-weight: 300;
+    color: #D7EEF9;
+}
+
+/* INVESTOR RELATIONS */
+.investor-relations{
+    padding: 100px 80px;
+    background-color: #e2f6ff;
+}
+.investor-relations > h1{
+    font-size: 60px;
+    color: #081150;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.investor-relations > .investor-relations-info{
+    background: linear-gradient(to bottom, #081150,#081050cc ), url(./images/header-bg-1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 40px;
+    gap: 80px;
+    padding: 100px 50px;
+}
+.investor-relations > .investor-relations-info > .investor-relations-info-text {
+    width: 100%;
+}
+.investor-relations > .investor-relations-info > .investor-relations-info-text > img {
+    margin-bottom: 20px;
+}
+.investor-relations > .investor-relations-info > .investor-relations-info-text > h2 {
+    font-size: 35px;
+    color: #fff;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+.investor-relations > .investor-relations-info > .investor-relations-info-text > p {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+
+/* HOW IT WORKS */
+.how-it-works{
+    padding: 60px 150px;
+    background-color: #e2f6ff;
+    text-align: center;
+}
+.how-it-works > .how-it-works-text{
+    width: 100%;
+}
+.how-it-works > .how-it-works-text > h1{
+   font-size: 38px;
+   color: #081150;
+   font-weight: 400;
+   margin-bottom: 30px;
+}
+.how-it-works > .how-it-works-text > p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    margin-bottom: 50px;
+}
+.how-it-works > .how-it-works-list{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+.how-it-works > .how-it-works-list > .how-it-works-list-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.how-it-works > .how-it-works-list > .how-it-works-list-content > h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #081150;
+    border-radius: 50%;
+    color:#D7EEF9 ;
+    font-size: 33px;
+    font-weight: 600;
+}
+.how-it-works > .how-it-works-list > .how-it-works-list-content > p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #081150;
+}
+
+
