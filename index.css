@@ -1018,7 +1018,7 @@ footer > .footer-copyright > p {
 }
 
 /* SMALL SCREEN MEDIA QUERY */
-@media (391px <= width <= 575px) {
+@media(220px <= width <= 240px){
   body.static {
     overflow-y: hidden;
   }
@@ -1039,6 +1039,7 @@ footer > .footer-copyright > p {
     visibility: hidden;
     transition: all 0.4s ease-in-out;
     padding-bottom: 20px;
+    border: 1px solid #fff;
   }
   header > .small-screen-nav-list.display {
     transform: translateX(0);
@@ -1046,7 +1047,7 @@ footer > .footer-copyright > p {
     visibility: visible;
   }
   header > .small-screen-nav-list ul {
-    margin: 100px 20px;
+    margin: 100px 10px;
     list-style: none;
     width: 100%;
     display: flex;
@@ -1061,7 +1062,7 @@ footer > .footer-copyright > p {
     border: none;
     color: #fff;
     background-color: transparent;
-    font-size: 14px;
+    font-size: 11px;
     cursor: pointer;
   }
   header > .small-screen-nav-list > ul > li > .small-screen-mirror-trade > i,
@@ -1086,7 +1087,7 @@ footer > .footer-copyright > p {
     justify-content: space-between;
     border: none;
     color: #fff;
-    font-size: 14px;
+    font-size: 11px;
     text-decoration: none;
   }
   header
@@ -1098,7 +1099,7 @@ footer > .footer-copyright > p {
   header > .small-screen-nav-list > ul > li > .small-screen-about-dropdown {
     border: 1px solid #fff;
     margin-top: 0;
-    padding: 0 20px;
+    padding: 0 10px;
     height: 0;
     opacity: 0;
     visibility: hidden;
@@ -1111,7 +1112,7 @@ footer > .footer-copyright > p {
     > .small-screen-about-dropdown.show {
     border: 1px solid #fff;
     margin-top: 40px;
-    padding: 20px;
+    padding: 10px;
     height: 260px;
     opacity: 1;
     visibility: visible;
@@ -1123,7 +1124,7 @@ footer > .footer-copyright > p {
     > li
     > .small-screen-mirror-trade-dropdown.show {
     margin-top: 40px;
-    padding: 20px;
+    padding: 10px;
     height: 490px;
     opacity: 1;
     visibility: visible;
@@ -1134,7 +1135,7 @@ footer > .footer-copyright > p {
     > li
     > .small-screen-planning-dropdown.show {
     margin-top: 40px;
-    padding: 20px;
+    padding: 10px;
     height: 140px;
     opacity: 1;
     visibility: visible;
@@ -1184,7 +1185,7 @@ footer > .footer-copyright > p {
     > ul
     > li
     > a {
-    font-size: 12px;
+    font-size: 10px;
     color: #fff;
     text-decoration: none;
   }
@@ -1246,1089 +1247,22 @@ footer > .footer-copyright > p {
     border: 1px solid #1e90ff;
   }
   header > .small-screen-nav-list > a > .small-screen-nav-list-logo {
-    width: 150px;
+    width: 100px;
     position: absolute;
     top: 20px;
-    left: 20px;
+    left: 10px;
   }
   header > .small-screen-nav-list > .bi-x-lg {
-    font-size: 20px;
+    font-size: 12px;
     color: #fff;
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 10px;
     cursor: pointer;
   }
   header > nav > .bi-list {
     display: flex;
-    padding-right: 15px;
-  }
-  header > nav > .nav-links-grp1 > .nav-links {
-    display: none;
-  }
-  header > nav > .nav-links-grp2 {
-    display: none;
-  }
-  header > nav > .nav-links-grp1 > .logo {
-    padding-left: 15px;
-  }
-  header > nav > .nav-links-grp1 > .logo > img {
-    width: 150px;
-  }
-  .header-content {
-    padding: 200px 0 0 0;
-    width: 100%;
-  }
-  .header-content > .header-content-text {
-    width: 100%;
-  }
-  .header-content > .header-content-text > h1 {
-    font-size: 25px;
-    width: 100%;
-    padding: 0 20px;
-  }
-  .header-content > .header-content-text > p {
-    font-size: 11px;
-    padding: 0 20px;
-  }
-  .header-content > .start-copying-btn {
-    width: 200px;
-    margin-left: 20px;
-    height: 20px;
-    padding: 15px 20px;
-    font-size: 15px;
-    font-weight: 600;
-  }
-  /* HEADER  */
-
-  /* COPY TRADING */
-  .copy-trading {
-    padding: 60px 20px;
-    background-color: #e2f6ff;
-  }
-  .copy-trading > h1 {
-    font-size: 35px;
-  }
-  .copy-trading > .copy-trading-info {
-    flex-direction: column;
-    gap: 0;
-    padding: 40px 20px;
-  }
-  .copy-trading > .copy-trading-info > .copy-trading-info-text {
-    width: 100%;
-  }
-  .copy-trading > .copy-trading-info > .copy-trading-info-text > p {
-    font-size: 12px;
-  }
-  .copy-trading > .copy-trading-info > .copy-trading-info-text > h2 {
-    font-size: 28px;
-  }
-  .copy-trading > .copy-trading-info > .copy-trading-info-btn > a {
-    margin-top: 50px;
-  }
-
-  /* INVESTOR RELATIONS */
-  .investor-relations {
-    padding: 60px 20px;
-    background-color: #e2f6ff;
-  }
-  .investor-relations > h1 {
-    font-size: 35px;
-  }
-  .investor-relations > .investor-relations-info {
-    flex-direction: column;
-    gap: 0;
-    padding: 40px 20px;
-  }
-  .investor-relations
-    > .investor-relations-info
-    > .investor-relations-info-text {
-    width: 100%;
-  }
-  .investor-relations
-    > .investor-relations-info
-    > .investor-relations-info-text
-    > p {
-    font-size: 12px;
-  }
-  .investor-relations
-    > .investor-relations-info
-    > .investor-relations-info-text
-    > h2 {
-    font-size: 28px;
-  }
-  .investor-relations
-    > .investor-relations-info
-    > .investor-relations-info-btn
-    > a {
-    margin-top: 50px;
-  }
-
-  /* WHY TO COPYTRADE */
-  .why-to-copytrade {
-    padding: 60px 20px;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: top left;
-  }
-  .why-to-copytrade > h1 {
-    font-size: 22px;
-  }
-  .why-to-copytrade > p {
-    font-size: 13px;
-  }
-  .why-to-copytrade
-    > .why-to-copytrade-reasons-section
-    > .why-to-copytrade-reasons {
-    flex-direction: column;
-    padding: 0;
-    width: 100%;
-    gap: 30px;
-    margin-bottom: 30px;
-  }
-  .why-to-copytrade > .why-to-copytrade-reasons-section {
-    padding: 0;
-    width: 100%;
-  }
-  .why-to-copytrade
-    > .why-to-copytrade-reasons-section
-    > .why-to-copytrade-reasons
-    > .why-to-copytrade-individual-reasons {
-    flex-direction: row;
-    width: 100%;
-  }
-  .why-to-copytrade
-    > .why-to-copytrade-reasons-section
-    > .why-to-copytrade-reasons
-    > .why-to-copytrade-individual-reasons
-    > span {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .why-to-copytrade
-    > .why-to-copytrade-reasons-section
-    > .why-to-copytrade-reasons
-    > .why-to-copytrade-individual-reasons
-    > span
-    > h2 {
-    font-size: 16px;
-    text-align: left;
-  }
-  .why-to-copytrade
-    > .why-to-copytrade-reasons-section
-    > .why-to-copytrade-reasons
-    > .why-to-copytrade-individual-reasons
-    > span
-    > p {
-    font-size: 10px;
-    text-align: left;
-  }
-
-  /* HOW IT WORKS */
-  .how-it-works {
-    padding: 60px 20px;
-  }
-  .how-it-works > .how-it-works-text > h1 {
-    font-size: 22px;
-    text-align: left;
-    margin-bottom: 10px;
-  }
-  .how-it-works > .how-it-works-text > p {
-    font-size: 15px;
-    text-align: left;
-    margin-bottom: 25px;
-  }
-  .how-it-works > .how-it-works-list {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-  }
-  .how-it-works > .how-it-works-list > .how-it-works-list-content {
-    flex-direction: row;
-  }
-  .how-it-works > .how-it-works-list > .how-it-works-list-content > h1 {
-    font-size: 25px;
-    width: 45px;
-    height: 45px;
-  }
-  /* FAQ SECTION */
-  .faq {
-    padding: 80px 20px;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: top left;
-  }
-  .faq > .faq-heading {
-    font-size: 40px;
-  }
-  .faq > .faq-accordion-section {
-    padding: 0;
-  }
-  .faq-accordion-section
-    > .faq-accordion-content
-    > .faq-accordion-1
-    > .faq-accordion-label-btn-1
-    > .faq-accordion-question-1,
-  .faq-accordion-section
-    > .faq-accordion-content
-    > .faq-accordion-2
-    > .faq-accordion-label-btn-2
-    > .faq-accordion-question-2,
-  .faq-accordion-section
-    > .faq-accordion-content
-    > .faq-accordion-3
-    > .faq-accordion-label-btn-3
-    > .faq-accordion-question-3,
-  .faq-accordion-section
-    > .faq-accordion-content
-    > .faq-accordion-4
-    > .faq-accordion-label-btn-4
-    > .faq-accordion-question-4,
-  .faq-accordion-section
-    > .faq-accordion-content
-    > .faq-accordion-5
-    > .faq-accordion-label-btn-5
-    > .faq-accordion-question-5 {
-    font-size: 14px;
-    width: 100%;
-    text-align: left;
-  }
-  .faq-accordion-section
-    > .faq-accordion-content
-    > .faq-accordion-1
-    > .faq-accordion-text-1
-    > p,
-  .faq-accordion-section
-    > .faq-accordion-content
-    > .faq-accordion-2
-    > .faq-accordion-text-2
-    > p,
-  .faq-accordion-section
-    > .faq-accordion-content
-    > .faq-accordion-3
-    > .faq-accordion-text-3
-    > p,
-  .faq-accordion-section
-    > .faq-accordion-content
-    > .faq-accordion-4
-    > .faq-accordion-text-4
-    > p,
-  .faq-accordion-section
-    > .faq-accordion-content
-    > .faq-accordion-5
-    .faq-accordion-text-5
-    > p {
-    font-size: 12px;
-  }
-  .faq-accordion-section .faq-accordion-content .faq-accordion-2.resize,
-  .faq-accordion-section .faq-accordion-content .faq-accordion-3.resize,
-  .faq-accordion-section .faq-accordion-content .faq-accordion-4.resize,
-  .faq-accordion-section .faq-accordion-content .faq-accordion-5.resize {
-    height: 220px;
-  }
-
-  /* FOOTER */
-  footer {
-    padding: 40px 20px;
-    flex-direction: column;
-    gap: 40px;
-  }
-  footer > .footer-text > p {
-    margin-bottom: 50px;
-  }
-  footer > .utility-links {
-    gap: 40px;
-    flex-direction: column;
-    margin-bottom: 60px;
-  }
-  footer > .footer-copyright {
-    bottom: 40px;
-  }
-  footer > .footer-copyright > p{
-    font-size: 10px;
-  }
-}
-@media(361px <= width <= 391px){
-  body.static {
-    overflow-y: hidden;
-  }
-  /* HEADER */
-  header {
-    height: 80vh;
-  }
-  header > nav {
-    width: 100vw;
-  }
-  header > .small-screen-nav-list {
-    display: flex;
-    box-sizing: border-box;
-    overflow: scroll;
-    overflow-x: hidden;
-    transform: translateX(100%);
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.4s ease-in-out;
-    padding-bottom: 20px;
-  }
-  header > .small-screen-nav-list.display {
-    transform: translateX(0);
-    opacity: 1;
-    visibility: visible;
-  }
-  header > .small-screen-nav-list ul {
-    margin: 100px 20px;
-    list-style: none;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
-  header > .small-screen-nav-list > ul > li > button {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: none;
-    color: #fff;
-    background-color: transparent;
-    font-size: 14px;
-    cursor: pointer;
-  }
-  header > .small-screen-nav-list > ul > li > .small-screen-mirror-trade > i,
-  header > .small-screen-nav-list > ul > li > .small-screen-planning > i,
-  header > .small-screen-nav-list > ul > li > .small-screen-about > i {
-    transition: rotate 0.3s ease-in-out;
-  }
-  header
-    > .small-screen-nav-list
-    > ul
-    > li
-    > .small-screen-mirror-trade
-    > i.rotate,
-  header > .small-screen-nav-list > ul > li > .small-screen-planning > i.rotate,
-  header > .small-screen-nav-list > ul > li > .small-screen-about > i.rotate {
-    rotate: 180deg;
-  }
-  header > .small-screen-nav-list > ul > li > .small-screen-home {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: none;
-    color: #fff;
-    font-size: 14px;
-    text-decoration: none;
-  }
-  header
-    > .small-screen-nav-list
-    > ul
-    > li
-    > .small-screen-mirror-trade-dropdown,
-  header > .small-screen-nav-list > ul > li > .small-screen-planning-dropdown,
-  header > .small-screen-nav-list > ul > li > .small-screen-about-dropdown {
-    border: 1px solid #fff;
-    margin-top: 0;
-    padding: 0 20px;
-    height: 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease-in-out;
-  }
-  header
-    > .small-screen-nav-list
-    > ul
-    > li
-    > .small-screen-about-dropdown.show {
-    border: 1px solid #fff;
-    margin-top: 40px;
-    padding: 20px;
-    height: 260px;
-    opacity: 1;
-    visibility: visible;
-    transition: all 0.3s ease-in-out;
-  }
-  header
-    > .small-screen-nav-list
-    > ul
-    > li
-    > .small-screen-mirror-trade-dropdown.show {
-    margin-top: 40px;
-    padding: 20px;
-    height: 490px;
-    opacity: 1;
-    visibility: visible;
-  }
-  header
-    > .small-screen-nav-list
-    > ul
-    > li
-    > .small-screen-planning-dropdown.show {
-    margin-top: 40px;
-    padding: 20px;
-    height: 140px;
-    opacity: 1;
-    visibility: visible;
-  }
-  header
-    > .small-screen-nav-list
-    > ul
-    > li
-    > .small-screen-mirror-trade-dropdown
-    > ul,
-  header
-    > .small-screen-nav-list
-    > ul
-    > li
-    > .small-screen-planning-dropdown
-    > ul,
-  header
-    > .small-screen-nav-list
-    > ul
-    > li
-    > .small-screen-about-dropdown
-    > ul {
-    width: 100%;
-    margin: 0;
-  }
-  header
-    > .small-screen-nav-list
-    > ul
-    > li
-    > .small-screen-mirror-trade-dropdown
-    > ul
-    > li
-    > a,
-  header
-    > .small-screen-nav-list
-    > ul
-    > li
-    > .small-screen-planning-dropdown
-    > ul
-    > li
-    > a,
-  header
-    > .small-screen-nav-list
-    > ul
-    > li
-    > .small-screen-about-dropdown
-    > ul
-    > li
-    > a {
-    font-size: 12px;
-    color: #fff;
-    text-decoration: none;
-  }
-  header > .small-screen-nav-list ul > .small-screen-navlist-btns {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 20px;
-    gap: 20px;
-  }
-  header > .small-screen-nav-list ul > .small-screen-navlist-btns > a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    width: 100%;
-    transition: all 0.3s ease-in-out;
-  }
-  header
-    > .small-screen-nav-list
-    ul
-    > .small-screen-navlist-btns
-    > .small-screen-login {
-    color: #1e90ff;
-    background-color: transparent;
-    border: 1px solid #1e90ff;
-    padding: 10px 0;
-    border-radius: 20px;
-    font-weight: bold;
-  }
-  header
-    > .small-screen-nav-list
-    ul
-    > .small-screen-navlist-btns
-    > .small-screen-login:hover {
-    color: #fff;
-    background-color: #1e90ff;
-    border: 1px solid #1e90ff;
-  }
-  header
-    > .small-screen-nav-list
-    ul
-    > .small-screen-navlist-btns
-    > .small-screen-register {
-    color: #fff;
-    background-color: #1e90ff;
-    border: 1px solid #1e90ff;
-    padding: 10px 0;
-    border-radius: 20px;
-    font-weight: bold;
-  }
-  header
-    > .small-screen-nav-list
-    ul
-    > .small-screen-navlist-btns
-    > .small-screen-register:hover {
-    color: #1e90ff;
-    background-color: transparent;
-    border: 1px solid #1e90ff;
-  }
-  header > .small-screen-nav-list > a > .small-screen-nav-list-logo {
-    width: 150px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-  }
-  header > .small-screen-nav-list > .bi-x-lg {
-    font-size: 20px;
-    color: #fff;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-  }
-  header > nav > .bi-list {
-    display: flex;
-    padding-right: 15px;
-  }
-  header > nav > .nav-links-grp1 > .nav-links {
-    display: none;
-  }
-  header > nav > .nav-links-grp2 {
-    display: none;
-  }
-  header > nav > .nav-links-grp1 > .logo {
-    padding-left: 15px;
-  }
-  header > nav > .nav-links-grp1 > .logo > img {
-    width: 150px;
-  }
-  .header-content {
-    padding: 200px 0 0 0;
-    width: 100%;
-  }
-  .header-content > .header-content-text {
-    width: 100%;
-  }
-  .header-content > .header-content-text > h1 {
-    font-size: 25px;
-    width: 100%;
-    padding: 0 20px;
-  }
-  .header-content > .header-content-text > p {
-    font-size: 11px;
-    padding: 0 20px;
-  }
-  .header-content > .start-copying-btn {
-    width: 200px;
-    margin-left: 20px;
-    height: 20px;
-    padding: 15px 20px;
-    font-size: 15px;
-    font-weight: 600;
-  }
-  /* HEADER  */
-
-  /* COPY TRADING */
-  .copy-trading {
-    padding: 60px 20px;
-    background-color: #e2f6ff;
-  }
-  .copy-trading > h1 {
-    font-size: 35px;
-  }
-  .copy-trading > .copy-trading-info {
-    flex-direction: column;
-    gap: 0;
-    padding: 40px 20px;
-  }
-  .copy-trading > .copy-trading-info > .copy-trading-info-text {
-    width: 100%;
-  }
-  .copy-trading > .copy-trading-info > .copy-trading-info-text > p {
-    font-size: 11px;
-  }
-  .copy-trading > .copy-trading-info > .copy-trading-info-text > h2 {
-    font-size: 28px;
-  }
-  .copy-trading > .copy-trading-info > .copy-trading-info-btn > a {
-    margin-top: 50px;
-  }
-
-  /* INVESTOR RELATIONS */
-  .investor-relations {
-    padding: 60px 20px;
-    background-color: #e2f6ff;
-  }
-  .investor-relations > h1 {
-    font-size: 35px;
-  }
-  .investor-relations > .investor-relations-info {
-    flex-direction: column;
-    gap: 0;
-    padding: 40px 20px;
-  }
-  .investor-relations
-    > .investor-relations-info
-    > .investor-relations-info-text {
-    width: 100%;
-  }
-  .investor-relations
-    > .investor-relations-info
-    > .investor-relations-info-text
-    > p {
-    font-size: 11px;
-  }
-  .investor-relations
-    > .investor-relations-info
-    > .investor-relations-info-text
-    > h2 {
-    font-size: 28px;
-  }
-  .investor-relations
-    > .investor-relations-info
-    > .investor-relations-info-btn
-    > a {
-    margin-top: 50px;
-  }
-
-  /* WHY TO COPYTRADE */
-  .why-to-copytrade {
-    padding: 60px 20px;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: top left;
-  }
-  .why-to-copytrade > h1 {
-    font-size: 22px;
-  }
-  .why-to-copytrade > p {
-    font-size: 13px;
-  }
-  .why-to-copytrade
-    > .why-to-copytrade-reasons-section
-    > .why-to-copytrade-reasons {
-    flex-direction: column;
-    padding: 0;
-    width: 100%;
-    gap: 30px;
-    margin-bottom: 30px;
-  }
-  .why-to-copytrade > .why-to-copytrade-reasons-section {
-    padding: 0;
-    width: 100%;
-  }
-  .why-to-copytrade
-    > .why-to-copytrade-reasons-section
-    > .why-to-copytrade-reasons
-    > .why-to-copytrade-individual-reasons {
-    flex-direction: row;
-    width: 100%;
-  }
-  .why-to-copytrade
-    > .why-to-copytrade-reasons-section
-    > .why-to-copytrade-reasons
-    > .why-to-copytrade-individual-reasons
-    > span {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .why-to-copytrade
-    > .why-to-copytrade-reasons-section
-    > .why-to-copytrade-reasons
-    > .why-to-copytrade-individual-reasons
-    > span
-    > h2 {
-    font-size: 16px;
-    text-align: left;
-  }
-  .why-to-copytrade
-    > .why-to-copytrade-reasons-section
-    > .why-to-copytrade-reasons
-    > .why-to-copytrade-individual-reasons
-    > span
-    > p {
-    font-size: 10px;
-    text-align: left;
-  }
-
-  /* HOW IT WORKS */
-  .how-it-works {
-    padding: 60px 20px;
-  }
-  .how-it-works > .how-it-works-text > h1 {
-    font-size: 22px;
-    text-align: left;
-    margin-bottom: 10px;
-  }
-  .how-it-works > .how-it-works-text > p {
-    font-size: 15px;
-    text-align: left;
-    margin-bottom: 25px;
-  }
-  .how-it-works > .how-it-works-list {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-  }
-  .how-it-works > .how-it-works-list > .how-it-works-list-content {
-    flex-direction: row;
-  }
-  .how-it-works > .how-it-works-list > .how-it-works-list-content > h1 {
-    font-size: 25px;
-    width: 45px;
-    height: 45px;
-  }
-  /* FAQ SECTION */
-  .faq {
-    padding: 80px 20px;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: top left;
-  }
-  .faq > .faq-heading {
-    font-size: 40px;
-  }
-  .faq > .faq-accordion-section {
-    padding: 0;
-  }
-  .faq-accordion-section
-    > .faq-accordion-content
-    > .faq-accordion-1
-    > .faq-accordion-label-btn-1
-    > .faq-accordion-question-1,
-  .faq-accordion-section
-    > .faq-accordion-content
-    > .faq-accordion-2
-    > .faq-accordion-label-btn-2
-    > .faq-accordion-question-2,
-  .faq-accordion-section
-    > .faq-accordion-content
-    > .faq-accordion-3
-    > .faq-accordion-label-btn-3
-    > .faq-accordion-question-3,
-  .faq-accordion-section
-    > .faq-accordion-content
-    > .faq-accordion-4
-    > .faq-accordion-label-btn-4
-    > .faq-accordion-question-4,
-  .faq-accordion-section
-    > .faq-accordion-content
-    > .faq-accordion-5
-    > .faq-accordion-label-btn-5
-    > .faq-accordion-question-5 {
-    font-size: 13px;
-    width: 100%;
-    text-align: left;
-  }
-  .faq-accordion-section
-    > .faq-accordion-content
-    > .faq-accordion-1
-    > .faq-accordion-text-1
-    > p,
-  .faq-accordion-section
-    > .faq-accordion-content
-    > .faq-accordion-2
-    > .faq-accordion-text-2
-    > p,
-  .faq-accordion-section
-    > .faq-accordion-content
-    > .faq-accordion-3
-    > .faq-accordion-text-3
-    > p,
-  .faq-accordion-section
-    > .faq-accordion-content
-    > .faq-accordion-4
-    > .faq-accordion-text-4
-    > p,
-  .faq-accordion-section
-    > .faq-accordion-content
-    > .faq-accordion-5
-    .faq-accordion-text-5
-    > p {
-    font-size: 10px;
-  }
-  .faq-accordion-section .faq-accordion-content .faq-accordion-2.resize,
-  .faq-accordion-section .faq-accordion-content .faq-accordion-3.resize,
-  .faq-accordion-section .faq-accordion-content .faq-accordion-4.resize{
-    height: 200px;
-  }
-  .faq-accordion-section .faq-accordion-content .faq-accordion-5.resize{
-    height: 180px;
-  }
-  
-
-  /* FOOTER */
-  footer {
-    padding: 40px 20px;
-    flex-direction: column;
-    gap: 40px;
-  }
-  footer > .footer-text > p {
-    margin-bottom: 50px;
-  }
-  footer > .utility-links {
-    gap: 40px;
-    flex-direction: column;
-    margin-bottom: 60px;
-  }
-  footer > .footer-copyright {
-    bottom: 40px;
-  }
-  footer > .footer-copyright > p{
-    font-size: 10px;
-  }
-
-}
-
-@media(321px <= width <= 360px){
-  body.static {
-    overflow-y: hidden;
-  }
-  /* HEADER */
-  header {
-    height: 80vh;
-  }
-  header > nav {
-    width: 100vw;
-  }
-  header > .small-screen-nav-list {
-    display: flex;
-    box-sizing: border-box;
-    overflow: scroll;
-    overflow-x: hidden;
-    transform: translateX(100%);
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.4s ease-in-out;
-    padding-bottom: 20px;
-  }
-  header > .small-screen-nav-list.display {
-    transform: translateX(0);
-    opacity: 1;
-    visibility: visible;
-  }
-  header > .small-screen-nav-list ul {
-    margin: 100px 20px;
-    list-style: none;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
-  header > .small-screen-nav-list > ul > li > button {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: none;
-    color: #fff;
-    background-color: transparent;
-    font-size: 14px;
-    cursor: pointer;
-  }
-  header > .small-screen-nav-list > ul > li > .small-screen-mirror-trade > i,
-  header > .small-screen-nav-list > ul > li > .small-screen-planning > i,
-  header > .small-screen-nav-list > ul > li > .small-screen-about > i {
-    transition: rotate 0.3s ease-in-out;
-  }
-  header
-    > .small-screen-nav-list
-    > ul
-    > li
-    > .small-screen-mirror-trade
-    > i.rotate,
-  header > .small-screen-nav-list > ul > li > .small-screen-planning > i.rotate,
-  header > .small-screen-nav-list > ul > li > .small-screen-about > i.rotate {
-    rotate: 180deg;
-  }
-  header > .small-screen-nav-list > ul > li > .small-screen-home {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: none;
-    color: #fff;
-    font-size: 14px;
-    text-decoration: none;
-  }
-  header
-    > .small-screen-nav-list
-    > ul
-    > li
-    > .small-screen-mirror-trade-dropdown,
-  header > .small-screen-nav-list > ul > li > .small-screen-planning-dropdown,
-  header > .small-screen-nav-list > ul > li > .small-screen-about-dropdown {
-    border: 1px solid #fff;
-    margin-top: 0;
-    padding: 0 20px;
-    height: 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease-in-out;
-  }
-  header
-    > .small-screen-nav-list
-    > ul
-    > li
-    > .small-screen-about-dropdown.show {
-    border: 1px solid #fff;
-    margin-top: 40px;
-    padding: 20px;
-    height: 260px;
-    opacity: 1;
-    visibility: visible;
-    transition: all 0.3s ease-in-out;
-  }
-  header
-    > .small-screen-nav-list
-    > ul
-    > li
-    > .small-screen-mirror-trade-dropdown.show {
-    margin-top: 40px;
-    padding: 20px;
-    height: 490px;
-    opacity: 1;
-    visibility: visible;
-  }
-  header
-    > .small-screen-nav-list
-    > ul
-    > li
-    > .small-screen-planning-dropdown.show {
-    margin-top: 40px;
-    padding: 20px;
-    height: 140px;
-    opacity: 1;
-    visibility: visible;
-  }
-  header
-    > .small-screen-nav-list
-    > ul
-    > li
-    > .small-screen-mirror-trade-dropdown
-    > ul,
-  header
-    > .small-screen-nav-list
-    > ul
-    > li
-    > .small-screen-planning-dropdown
-    > ul,
-  header
-    > .small-screen-nav-list
-    > ul
-    > li
-    > .small-screen-about-dropdown
-    > ul {
-    width: 100%;
-    margin: 0;
-  }
-  header
-    > .small-screen-nav-list
-    > ul
-    > li
-    > .small-screen-mirror-trade-dropdown
-    > ul
-    > li
-    > a,
-  header
-    > .small-screen-nav-list
-    > ul
-    > li
-    > .small-screen-planning-dropdown
-    > ul
-    > li
-    > a,
-  header
-    > .small-screen-nav-list
-    > ul
-    > li
-    > .small-screen-about-dropdown
-    > ul
-    > li
-    > a {
-    font-size: 12px;
-    color: #fff;
-    text-decoration: none;
-  }
-  header > .small-screen-nav-list ul > .small-screen-navlist-btns {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 20px;
-    gap: 20px;
-  }
-  header > .small-screen-nav-list ul > .small-screen-navlist-btns > a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    width: 100%;
-    transition: all 0.3s ease-in-out;
-  }
-  header
-    > .small-screen-nav-list
-    ul
-    > .small-screen-navlist-btns
-    > .small-screen-login {
-    color: #1e90ff;
-    background-color: transparent;
-    border: 1px solid #1e90ff;
-    padding: 10px 0;
-    border-radius: 20px;
-    font-weight: bold;
-  }
-  header
-    > .small-screen-nav-list
-    ul
-    > .small-screen-navlist-btns
-    > .small-screen-login:hover {
-    color: #fff;
-    background-color: #1e90ff;
-    border: 1px solid #1e90ff;
-  }
-  header
-    > .small-screen-nav-list
-    ul
-    > .small-screen-navlist-btns
-    > .small-screen-register {
-    color: #fff;
-    background-color: #1e90ff;
-    border: 1px solid #1e90ff;
-    padding: 10px 0;
-    border-radius: 20px;
-    font-weight: bold;
-  }
-  header
-    > .small-screen-nav-list
-    ul
-    > .small-screen-navlist-btns
-    > .small-screen-register:hover {
-    color: #1e90ff;
-    background-color: transparent;
-    border: 1px solid #1e90ff;
-  }
-  header > .small-screen-nav-list > a > .small-screen-nav-list-logo {
-    width: 120px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-  }
-  header > .small-screen-nav-list > .bi-x-lg {
-    font-size: 16px;
-    color: #fff;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-  }
-  header > nav > .bi-list {
-    display: flex;
-    padding-right: 12px;
+    padding-right: 10px;
     font-size: 16px;
   }
   header > nav > .nav-links-grp1 > .nav-links {
@@ -2338,7 +1272,7 @@ footer > .footer-copyright > p {
     display: none;
   }
   header > nav > .nav-links-grp1 > .logo {
-    padding-left: 12px;
+    padding-left: 10px;
   }
   header > nav > .nav-links-grp1 > .logo > img {
     width: 130px;
@@ -2351,31 +1285,31 @@ footer > .footer-copyright > p {
     width: 100%;
   }
   .header-content > .header-content-text > h1 {
-    font-size: 20px;
+    font-size: 15px;
     width: 100%;
-    padding: 0 12px;
+    padding: 0 10px;
   }
   .header-content > .header-content-text > p {
-    font-size: 10px;
-    padding: 0 20px;
+    font-size: 9px;
+    padding: 0 10px;
   }
   .header-content > .start-copying-btn {
-    width: 200px;
-    margin-left: 20px;
-    height: 20px;
+    width: 100px;
+    margin-left: 10px;
+    height: 10px;
     padding: 15px 20px;
-    font-size: 15px;
+    font-size: 10px;
     font-weight: 600;
   }
   /* HEADER  */
 
   /* COPY TRADING */
   .copy-trading {
-    padding: 60px 12px;
+    padding: 60px 10px;
     background-color: #e2f6ff;
   }
   .copy-trading > h1 {
-    font-size: 35px;
+    font-size: 22px;
   }
   .copy-trading > .copy-trading-info {
     flex-direction: column;
@@ -2389,564 +1323,22 @@ footer > .footer-copyright > p {
     font-size: 10px;
   }
   .copy-trading > .copy-trading-info > .copy-trading-info-text > h2 {
-    font-size: 25px;
-  }
-  .copy-trading > .copy-trading-info > .copy-trading-info-btn > a {
-    margin-top: 50px;
-  }
-
-  /* INVESTOR RELATIONS */
-  .investor-relations {
-    padding: 60px 12px;
-    background-color: #e2f6ff;
-  }
-  .investor-relations > h1 {
-    font-size: 35px;
-  }
-  .investor-relations > .investor-relations-info {
-    flex-direction: column;
-    gap: 0;
-    padding: 40px 20px;
-  }
-  .investor-relations
-    > .investor-relations-info
-    > .investor-relations-info-text {
-    width: 100%;
-  }
-  .investor-relations
-    > .investor-relations-info
-    > .investor-relations-info-text
-    > p {
-    font-size: 11px;
-  }
-  .investor-relations
-    > .investor-relations-info
-    > .investor-relations-info-text
-    > h2 {
-    font-size: 25px;
-  }
-  .investor-relations
-    > .investor-relations-info
-    > .investor-relations-info-btn
-    > a {
-    margin-top: 50px;
-  }
-
-  /* WHY TO COPYTRADE */
-  .why-to-copytrade {
-    padding: 60px 12px;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: top left;
-  }
-  .why-to-copytrade > h1 {
-    font-size: 22px;
-  }
-  .why-to-copytrade > p {
-    font-size: 13px;
-  }
-  .why-to-copytrade
-    > .why-to-copytrade-reasons-section
-    > .why-to-copytrade-reasons {
-    flex-direction: column;
-    padding: 0;
-    width: 100%;
-    gap: 30px;
-    margin-bottom: 30px;
-  }
-  .why-to-copytrade > .why-to-copytrade-reasons-section {
-    padding: 0;
-    width: 100%;
-  }
-  .why-to-copytrade
-    > .why-to-copytrade-reasons-section
-    > .why-to-copytrade-reasons
-    > .why-to-copytrade-individual-reasons {
-    flex-direction: row;
-    width: 100%;
-  }
-  .why-to-copytrade
-    > .why-to-copytrade-reasons-section
-    > .why-to-copytrade-reasons
-    > .why-to-copytrade-individual-reasons
-    > span {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .why-to-copytrade
-    > .why-to-copytrade-reasons-section
-    > .why-to-copytrade-reasons
-    > .why-to-copytrade-individual-reasons
-    > span
-    > h2 {
-    font-size: 14px;
-    text-align: left;
-  }
-  .why-to-copytrade
-    > .why-to-copytrade-reasons-section
-    > .why-to-copytrade-reasons
-    > .why-to-copytrade-individual-reasons
-    > span
-    > p {
-    font-size: 10px;
-    text-align: left;
-  }
-
-  /* HOW IT WORKS */
-  .how-it-works {
-    padding: 60px 12px;
-  }
-  .how-it-works > .how-it-works-text > h1 {
-    font-size: 22px;
-    text-align: left;
-    margin-bottom: 10px;
-  }
-  .how-it-works > .how-it-works-text > p {
-    font-size: 13px;
-    text-align: left;
-    margin-bottom: 25px;
-  }
-  .how-it-works > .how-it-works-list {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-  }
-  .how-it-works > .how-it-works-list > .how-it-works-list-content {
-    flex-direction: row;
-  }
-  .how-it-works > .how-it-works-list > .how-it-works-list-content > p{
-    font-size: 14px;
-  }
-  .how-it-works > .how-it-works-list > .how-it-works-list-content > h1 {
-    font-size: 25px;
-    width: 45px;
-    height: 45px;
-  }
-  /* FAQ SECTION */
-  .faq {
-    padding: 80px 12px;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: top left;
-  }
-  .faq > .faq-heading {
-    font-size: 40px;
-  }
-  .faq > .faq-accordion-section {
-    padding: 0;
-  }
-  .faq-accordion-section
-    > .faq-accordion-content
-    > .faq-accordion-1
-    > .faq-accordion-label-btn-1
-    > .faq-accordion-question-1,
-  .faq-accordion-section
-    > .faq-accordion-content
-    > .faq-accordion-2
-    > .faq-accordion-label-btn-2
-    > .faq-accordion-question-2,
-  .faq-accordion-section
-    > .faq-accordion-content
-    > .faq-accordion-3
-    > .faq-accordion-label-btn-3
-    > .faq-accordion-question-3,
-  .faq-accordion-section
-    > .faq-accordion-content
-    > .faq-accordion-4
-    > .faq-accordion-label-btn-4
-    > .faq-accordion-question-4,
-  .faq-accordion-section
-    > .faq-accordion-content
-    > .faq-accordion-5
-    > .faq-accordion-label-btn-5
-    > .faq-accordion-question-5 {
-    font-size: 13px;
-    width: 100%;
-    text-align: left;
-  }
-  .faq-accordion-section
-    > .faq-accordion-content
-    > .faq-accordion-1
-    > .faq-accordion-text-1
-    > p,
-  .faq-accordion-section
-    > .faq-accordion-content
-    > .faq-accordion-2
-    > .faq-accordion-text-2
-    > p,
-  .faq-accordion-section
-    > .faq-accordion-content
-    > .faq-accordion-3
-    > .faq-accordion-text-3
-    > p,
-  .faq-accordion-section
-    > .faq-accordion-content
-    > .faq-accordion-4
-    > .faq-accordion-text-4
-    > p,
-  .faq-accordion-section
-    > .faq-accordion-content
-    > .faq-accordion-5
-    .faq-accordion-text-5
-    > p {
-    font-size: 10px;
-  }
-  .faq-accordion-section .faq-accordion-content .faq-accordion-2.resize,
-  .faq-accordion-section .faq-accordion-content .faq-accordion-3.resize,
-  .faq-accordion-section .faq-accordion-content .faq-accordion-4.resize,
-  .faq-accordion-section .faq-accordion-content .faq-accordion-5.resize{
-    height: 200px;
-  }
-  
-
-  /* FOOTER */
-  footer {
-    padding: 40px 12px;
-    flex-direction: column;
-    gap: 40px;
-  }
-  footer > .footer-text > p {
-    margin-bottom: 50px;
-    font-size: 10px;
-  }
-  footer > .footer-text > h3{
-    font-size: 12px;
-  }
-  footer > .footer-text > .footer-socials > .footer-socials-icons > a{
     font-size: 18px;
-    width: 30px;
-    height: 30px;
-  }
-  footer > .utility-links {
-    gap: 40px;
-    flex-direction: column;
-    margin-bottom: 60px;
-  }
-  footer > .footer-copyright {
-    bottom: 40px;
-  }
-  footer > .footer-copyright > p{
-    font-size: 10px;
-  }
-}
-@media(280px <= width <= 320px){
-  body.static {
-    overflow-y: hidden;
-  }
-  /* HEADER */
-  header {
-    height: 80vh;
-  }
-  header > nav {
-    width: 100vw;
-  }
-  header > .small-screen-nav-list {
-    display: flex;
-    box-sizing: border-box;
-    overflow: scroll;
-    overflow-x: hidden;
-    transform: translateX(100%);
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.4s ease-in-out;
-    padding-bottom: 20px;
-  }
-  header > .small-screen-nav-list.display {
-    transform: translateX(0);
-    opacity: 1;
-    visibility: visible;
-  }
-  header > .small-screen-nav-list ul {
-    margin: 100px 20px;
-    list-style: none;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
-  header > .small-screen-nav-list > ul > li > button {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: none;
-    color: #fff;
-    background-color: transparent;
-    font-size: 14px;
-    cursor: pointer;
-  }
-  header > .small-screen-nav-list > ul > li > .small-screen-mirror-trade > i,
-  header > .small-screen-nav-list > ul > li > .small-screen-planning > i,
-  header > .small-screen-nav-list > ul > li > .small-screen-about > i {
-    transition: rotate 0.3s ease-in-out;
-  }
-  header
-    > .small-screen-nav-list
-    > ul
-    > li
-    > .small-screen-mirror-trade
-    > i.rotate,
-  header > .small-screen-nav-list > ul > li > .small-screen-planning > i.rotate,
-  header > .small-screen-nav-list > ul > li > .small-screen-about > i.rotate {
-    rotate: 180deg;
-  }
-  header > .small-screen-nav-list > ul > li > .small-screen-home {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: none;
-    color: #fff;
-    font-size: 14px;
-    text-decoration: none;
-  }
-  header
-    > .small-screen-nav-list
-    > ul
-    > li
-    > .small-screen-mirror-trade-dropdown,
-  header > .small-screen-nav-list > ul > li > .small-screen-planning-dropdown,
-  header > .small-screen-nav-list > ul > li > .small-screen-about-dropdown {
-    border: 1px solid #fff;
-    margin-top: 0;
-    padding: 0 20px;
-    height: 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s ease-in-out;
-  }
-  header
-    > .small-screen-nav-list
-    > ul
-    > li
-    > .small-screen-about-dropdown.show {
-    border: 1px solid #fff;
-    margin-top: 40px;
-    padding: 20px;
-    height: 260px;
-    opacity: 1;
-    visibility: visible;
-    transition: all 0.3s ease-in-out;
-  }
-  header
-    > .small-screen-nav-list
-    > ul
-    > li
-    > .small-screen-mirror-trade-dropdown.show {
-    margin-top: 40px;
-    padding: 20px;
-    height: 490px;
-    opacity: 1;
-    visibility: visible;
-  }
-  header
-    > .small-screen-nav-list
-    > ul
-    > li
-    > .small-screen-planning-dropdown.show {
-    margin-top: 40px;
-    padding: 20px;
-    height: 140px;
-    opacity: 1;
-    visibility: visible;
-  }
-  header
-    > .small-screen-nav-list
-    > ul
-    > li
-    > .small-screen-mirror-trade-dropdown
-    > ul,
-  header
-    > .small-screen-nav-list
-    > ul
-    > li
-    > .small-screen-planning-dropdown
-    > ul,
-  header
-    > .small-screen-nav-list
-    > ul
-    > li
-    > .small-screen-about-dropdown
-    > ul {
-    width: 100%;
-    margin: 0;
-  }
-  header
-    > .small-screen-nav-list
-    > ul
-    > li
-    > .small-screen-mirror-trade-dropdown
-    > ul
-    > li
-    > a,
-  header
-    > .small-screen-nav-list
-    > ul
-    > li
-    > .small-screen-planning-dropdown
-    > ul
-    > li
-    > a,
-  header
-    > .small-screen-nav-list
-    > ul
-    > li
-    > .small-screen-about-dropdown
-    > ul
-    > li
-    > a {
-    font-size: 12px;
-    color: #fff;
-    text-decoration: none;
-  }
-  header > .small-screen-nav-list ul > .small-screen-navlist-btns {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 20px;
-    gap: 20px;
-  }
-  header > .small-screen-nav-list ul > .small-screen-navlist-btns > a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    width: 100%;
-    transition: all 0.3s ease-in-out;
-  }
-  header
-    > .small-screen-nav-list
-    ul
-    > .small-screen-navlist-btns
-    > .small-screen-login {
-    color: #1e90ff;
-    background-color: transparent;
-    border: 1px solid #1e90ff;
-    padding: 10px 0;
-    border-radius: 20px;
-    font-weight: bold;
-  }
-  header
-    > .small-screen-nav-list
-    ul
-    > .small-screen-navlist-btns
-    > .small-screen-login:hover {
-    color: #fff;
-    background-color: #1e90ff;
-    border: 1px solid #1e90ff;
-  }
-  header
-    > .small-screen-nav-list
-    ul
-    > .small-screen-navlist-btns
-    > .small-screen-register {
-    color: #fff;
-    background-color: #1e90ff;
-    border: 1px solid #1e90ff;
-    padding: 10px 0;
-    border-radius: 20px;
-    font-weight: bold;
-  }
-  header
-    > .small-screen-nav-list
-    ul
-    > .small-screen-navlist-btns
-    > .small-screen-register:hover {
-    color: #1e90ff;
-    background-color: transparent;
-    border: 1px solid #1e90ff;
-  }
-  header > .small-screen-nav-list > a > .small-screen-nav-list-logo {
-    width: 120px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-  }
-  header > .small-screen-nav-list > .bi-x-lg {
-    font-size: 16px;
-    color: #fff;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-  }
-  header > nav > .bi-list {
-    display: flex;
-    padding-right: 12px;
-    font-size: 16px;
-  }
-  header > nav > .nav-links-grp1 > .nav-links {
-    display: none;
-  }
-  header > nav > .nav-links-grp2 {
-    display: none;
-  }
-  header > nav > .nav-links-grp1 > .logo {
-    padding-left: 12px;
-  }
-  header > nav > .nav-links-grp1 > .logo > img {
-    width: 130px;
-  }
-  .header-content {
-    padding: 150px 0 0 0;
-    width: 100%;
-  }
-  .header-content > .header-content-text {
-    width: 100%;
-  }
-  .header-content > .header-content-text > h1 {
-    font-size: 20px;
-    width: 100%;
-    padding: 0 12px;
-  }
-  .header-content > .header-content-text > p {
-    font-size: 10px;
-    padding: 0 20px;
-  }
-  .header-content > .start-copying-btn {
-    width: 200px;
-    margin-left: 20px;
-    height: 20px;
-    padding: 15px 20px;
-    font-size: 15px;
-    font-weight: 600;
-  }
-  /* HEADER  */
-
-  /* COPY TRADING */
-  .copy-trading {
-    padding: 60px 12px;
-    background-color: #e2f6ff;
-  }
-  .copy-trading > h1 {
-    font-size: 35px;
-  }
-  .copy-trading > .copy-trading-info {
-    flex-direction: column;
-    gap: 0;
-    padding: 40px 20px;
-  }
-  .copy-trading > .copy-trading-info > .copy-trading-info-text {
-    width: 100%;
-  }
-  .copy-trading > .copy-trading-info > .copy-trading-info-text > p {
-    font-size: 10px;
-  }
-  .copy-trading > .copy-trading-info > .copy-trading-info-text > h2 {
-    font-size: 25px;
   }
   .copy-trading > .copy-trading-info > .copy-trading-info-btn > a {
     margin-top: 50px;
+    width: 90px;
+    font-size: 10px;
+    height: 10px;
   }
 
   /* INVESTOR RELATIONS */
   .investor-relations {
-    padding: 60px 12px;
+    padding: 60px 10px;
     background-color: #e2f6ff;
   }
   .investor-relations > h1 {
-    font-size: 35px;
+    font-size: 22px;
   }
   .investor-relations > .investor-relations-info {
     flex-direction: column;
@@ -2962,13 +1354,13 @@ footer > .footer-copyright > p {
     > .investor-relations-info
     > .investor-relations-info-text
     > p {
-    font-size: 11px;
+    font-size: 10px;
   }
   .investor-relations
     > .investor-relations-info
     > .investor-relations-info-text
     > h2 {
-    font-size: 25px;
+    font-size: 18px;
   }
   .investor-relations
     > .investor-relations-info
@@ -2979,16 +1371,16 @@ footer > .footer-copyright > p {
 
   /* WHY TO COPYTRADE */
   .why-to-copytrade {
-    padding: 60px 12px;
+    padding: 60px 10px;
     background-size: cover;
     background-attachment: fixed;
     background-position: top left;
   }
   .why-to-copytrade > h1 {
-    font-size: 22px;
+    font-size: 18px;
   }
   .why-to-copytrade > p {
-    font-size: 13px;
+    font-size: 10px;
   }
   .why-to-copytrade
     > .why-to-copytrade-reasons-section
@@ -3037,10 +1429,14 @@ footer > .footer-copyright > p {
     font-size: 10px;
     text-align: left;
   }
+  .why-to-copytrade > .why-to-copytrade-reasons-section > .why-to-copytrade-reasons > .why-to-copytrade-individual-reasons i{
+    font-size: 20px;
+    padding: 10px;
+  }
 
   /* HOW IT WORKS */
   .how-it-works {
-    padding: 60px 12px;
+    padding: 60px 10px;
   }
   .how-it-works > .how-it-works-text > h1 {
     font-size: 22px;
@@ -3048,9 +1444,10 @@ footer > .footer-copyright > p {
     margin-bottom: 10px;
   }
   .how-it-works > .how-it-works-text > p {
-    font-size: 13px;
+    font-size: 11px;
     text-align: left;
     margin-bottom: 25px;
+    line-height: 20px;
   }
   .how-it-works > .how-it-works-list {
     flex-direction: column;
@@ -3061,16 +1458,16 @@ footer > .footer-copyright > p {
     flex-direction: row;
   }
   .how-it-works > .how-it-works-list > .how-it-works-list-content > p{
-    font-size: 14px;
+    font-size: 11px;
   }
   .how-it-works > .how-it-works-list > .how-it-works-list-content > h1 {
-    font-size: 25px;
-    width: 45px;
-    height: 45px;
+    font-size: 18px;
+    width: 35px;
+    height: 35px;
   }
   /* FAQ SECTION */
   .faq {
-    padding: 80px 12px;
+    padding: 80px 10px;
     background-size: cover;
     background-attachment: fixed;
     background-position: top left;
@@ -3106,7 +1503,7 @@ footer > .footer-copyright > p {
     > .faq-accordion-5
     > .faq-accordion-label-btn-5
     > .faq-accordion-question-5 {
-    font-size: 13px;
+    font-size: 11px;
     width: 100%;
     text-align: left;
   }
@@ -3137,34 +1534,44 @@ footer > .footer-copyright > p {
     > p {
     font-size: 10px;
   }
-  .faq-accordion-section .faq-accordion-content .faq-accordion-1.resize,
-  .faq-accordion-section .faq-accordion-content .faq-accordion-2.resize,
   .faq-accordion-section .faq-accordion-content .faq-accordion-4.resize,
   .faq-accordion-section .faq-accordion-content .faq-accordion-5.resize{
-    height: 220px;
+    height: 260px;
+  }
+  .faq-accordion-section .faq-accordion-content .faq-accordion-2.resize{
+    height: 280px;
   }
   .faq-accordion-section .faq-accordion-content .faq-accordion-3.resize{
+    height: 300px;
+  }
+  .faq-accordion-section .faq-accordion-content .faq-accordion-1.resize{
     height: 240px;
   }
   
 
   /* FOOTER */
   footer {
-    padding: 40px 12px;
+    padding: 40px 10px;
     flex-direction: column;
     gap: 40px;
   }
   footer > .footer-text > p {
     margin-bottom: 50px;
-    font-size: 10px;
+    font-size: 9px;
   }
   footer > .footer-text > h3{
-    font-size: 12px;
+    font-size: 10px;
   }
   footer > .footer-text > .footer-socials > .footer-socials-icons > a{
     font-size: 18px;
     width: 30px;
     height: 30px;
+  }
+  footer > .utility-links > .utility-links-cols > h3{
+    font-size: 12px;
+  }
+  footer > .utility-links > .utility-links-cols > a{
+    font-size: 10px;
   }
   footer > .utility-links {
     gap: 40px;
@@ -3175,7 +1582,7 @@ footer > .footer-copyright > p {
     bottom: 40px;
   }
   footer > .footer-copyright > p{
-    font-size: 10px;
+    font-size: 8px;
 }
 }
 @media(240px <= width <= 280px){
@@ -3740,8 +2147,7 @@ footer > .footer-copyright > p {
     font-size: 9px;
 }
 }
-
-@media(220px <= width <= 240px){
+@media(280px <= width <= 320px){
   body.static {
     overflow-y: hidden;
   }
@@ -3757,12 +2163,11 @@ footer > .footer-copyright > p {
     box-sizing: border-box;
     overflow: scroll;
     overflow-x: hidden;
-    /* transform: translateX(100%); */
-    /* opacity: 0; */
-    /* visibility: hidden; */
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
     transition: all 0.4s ease-in-out;
     padding-bottom: 20px;
-    border: 1px solid #fff;
   }
   header > .small-screen-nav-list.display {
     transform: translateX(0);
@@ -3770,7 +2175,7 @@ footer > .footer-copyright > p {
     visibility: visible;
   }
   header > .small-screen-nav-list ul {
-    margin: 100px 10px;
+    margin: 100px 20px;
     list-style: none;
     width: 100%;
     display: flex;
@@ -3785,7 +2190,7 @@ footer > .footer-copyright > p {
     border: none;
     color: #fff;
     background-color: transparent;
-    font-size: 11px;
+    font-size: 14px;
     cursor: pointer;
   }
   header > .small-screen-nav-list > ul > li > .small-screen-mirror-trade > i,
@@ -3810,7 +2215,7 @@ footer > .footer-copyright > p {
     justify-content: space-between;
     border: none;
     color: #fff;
-    font-size: 11px;
+    font-size: 14px;
     text-decoration: none;
   }
   header
@@ -3822,7 +2227,7 @@ footer > .footer-copyright > p {
   header > .small-screen-nav-list > ul > li > .small-screen-about-dropdown {
     border: 1px solid #fff;
     margin-top: 0;
-    padding: 0 10px;
+    padding: 0 20px;
     height: 0;
     opacity: 0;
     visibility: hidden;
@@ -3835,7 +2240,7 @@ footer > .footer-copyright > p {
     > .small-screen-about-dropdown.show {
     border: 1px solid #fff;
     margin-top: 40px;
-    padding: 10px;
+    padding: 20px;
     height: 260px;
     opacity: 1;
     visibility: visible;
@@ -3847,7 +2252,7 @@ footer > .footer-copyright > p {
     > li
     > .small-screen-mirror-trade-dropdown.show {
     margin-top: 40px;
-    padding: 10px;
+    padding: 20px;
     height: 490px;
     opacity: 1;
     visibility: visible;
@@ -3858,7 +2263,7 @@ footer > .footer-copyright > p {
     > li
     > .small-screen-planning-dropdown.show {
     margin-top: 40px;
-    padding: 10px;
+    padding: 20px;
     height: 140px;
     opacity: 1;
     visibility: visible;
@@ -3908,7 +2313,7 @@ footer > .footer-copyright > p {
     > ul
     > li
     > a {
-    font-size: 10px;
+    font-size: 12px;
     color: #fff;
     text-decoration: none;
   }
@@ -3970,22 +2375,22 @@ footer > .footer-copyright > p {
     border: 1px solid #1e90ff;
   }
   header > .small-screen-nav-list > a > .small-screen-nav-list-logo {
-    width: 100px;
+    width: 120px;
     position: absolute;
     top: 20px;
-    left: 10px;
+    left: 20px;
   }
   header > .small-screen-nav-list > .bi-x-lg {
-    font-size: 12px;
+    font-size: 16px;
     color: #fff;
     position: absolute;
     top: 20px;
-    right: 10px;
+    right: 20px;
     cursor: pointer;
   }
   header > nav > .bi-list {
     display: flex;
-    padding-right: 10px;
+    padding-right: 12px;
     font-size: 16px;
   }
   header > nav > .nav-links-grp1 > .nav-links {
@@ -3995,7 +2400,7 @@ footer > .footer-copyright > p {
     display: none;
   }
   header > nav > .nav-links-grp1 > .logo {
-    padding-left: 10px;
+    padding-left: 12px;
   }
   header > nav > .nav-links-grp1 > .logo > img {
     width: 130px;
@@ -4008,31 +2413,31 @@ footer > .footer-copyright > p {
     width: 100%;
   }
   .header-content > .header-content-text > h1 {
-    font-size: 15px;
+    font-size: 20px;
     width: 100%;
-    padding: 0 10px;
+    padding: 0 12px;
   }
   .header-content > .header-content-text > p {
-    font-size: 9px;
-    padding: 0 10px;
+    font-size: 10px;
+    padding: 0 20px;
   }
   .header-content > .start-copying-btn {
-    width: 100px;
-    margin-left: 10px;
-    height: 10px;
+    width: 200px;
+    margin-left: 20px;
+    height: 20px;
     padding: 15px 20px;
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 600;
   }
   /* HEADER  */
 
   /* COPY TRADING */
   .copy-trading {
-    padding: 60px 10px;
+    padding: 60px 12px;
     background-color: #e2f6ff;
   }
   .copy-trading > h1 {
-    font-size: 22px;
+    font-size: 35px;
   }
   .copy-trading > .copy-trading-info {
     flex-direction: column;
@@ -4046,22 +2451,19 @@ footer > .footer-copyright > p {
     font-size: 10px;
   }
   .copy-trading > .copy-trading-info > .copy-trading-info-text > h2 {
-    font-size: 18px;
+    font-size: 25px;
   }
   .copy-trading > .copy-trading-info > .copy-trading-info-btn > a {
     margin-top: 50px;
-    width: 90px;
-    font-size: 10px;
-    height: 10px;
   }
 
   /* INVESTOR RELATIONS */
   .investor-relations {
-    padding: 60px 10px;
+    padding: 60px 12px;
     background-color: #e2f6ff;
   }
   .investor-relations > h1 {
-    font-size: 22px;
+    font-size: 35px;
   }
   .investor-relations > .investor-relations-info {
     flex-direction: column;
@@ -4077,13 +2479,13 @@ footer > .footer-copyright > p {
     > .investor-relations-info
     > .investor-relations-info-text
     > p {
-    font-size: 10px;
+    font-size: 11px;
   }
   .investor-relations
     > .investor-relations-info
     > .investor-relations-info-text
     > h2 {
-    font-size: 18px;
+    font-size: 25px;
   }
   .investor-relations
     > .investor-relations-info
@@ -4094,16 +2496,16 @@ footer > .footer-copyright > p {
 
   /* WHY TO COPYTRADE */
   .why-to-copytrade {
-    padding: 60px 10px;
+    padding: 60px 12px;
     background-size: cover;
     background-attachment: fixed;
     background-position: top left;
   }
   .why-to-copytrade > h1 {
-    font-size: 18px;
+    font-size: 22px;
   }
   .why-to-copytrade > p {
-    font-size: 10px;
+    font-size: 13px;
   }
   .why-to-copytrade
     > .why-to-copytrade-reasons-section
@@ -4152,14 +2554,10 @@ footer > .footer-copyright > p {
     font-size: 10px;
     text-align: left;
   }
-  .why-to-copytrade > .why-to-copytrade-reasons-section > .why-to-copytrade-reasons > .why-to-copytrade-individual-reasons i{
-    font-size: 20px;
-    padding: 10px;
-  }
 
   /* HOW IT WORKS */
   .how-it-works {
-    padding: 60px 10px;
+    padding: 60px 12px;
   }
   .how-it-works > .how-it-works-text > h1 {
     font-size: 22px;
@@ -4167,10 +2565,9 @@ footer > .footer-copyright > p {
     margin-bottom: 10px;
   }
   .how-it-works > .how-it-works-text > p {
-    font-size: 11px;
+    font-size: 13px;
     text-align: left;
     margin-bottom: 25px;
-    line-height: 20px;
   }
   .how-it-works > .how-it-works-list {
     flex-direction: column;
@@ -4181,16 +2578,16 @@ footer > .footer-copyright > p {
     flex-direction: row;
   }
   .how-it-works > .how-it-works-list > .how-it-works-list-content > p{
-    font-size: 11px;
+    font-size: 14px;
   }
   .how-it-works > .how-it-works-list > .how-it-works-list-content > h1 {
-    font-size: 18px;
-    width: 35px;
-    height: 35px;
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
   }
   /* FAQ SECTION */
   .faq {
-    padding: 80px 10px;
+    padding: 80px 12px;
     background-size: cover;
     background-attachment: fixed;
     background-position: top left;
@@ -4226,7 +2623,7 @@ footer > .footer-copyright > p {
     > .faq-accordion-5
     > .faq-accordion-label-btn-5
     > .faq-accordion-question-5 {
-    font-size: 11px;
+    font-size: 13px;
     width: 100%;
     text-align: left;
   }
@@ -4257,44 +2654,34 @@ footer > .footer-copyright > p {
     > p {
     font-size: 10px;
   }
+  .faq-accordion-section .faq-accordion-content .faq-accordion-1.resize,
+  .faq-accordion-section .faq-accordion-content .faq-accordion-2.resize,
   .faq-accordion-section .faq-accordion-content .faq-accordion-4.resize,
   .faq-accordion-section .faq-accordion-content .faq-accordion-5.resize{
-    height: 260px;
-  }
-  .faq-accordion-section .faq-accordion-content .faq-accordion-2.resize{
-    height: 280px;
+    height: 220px;
   }
   .faq-accordion-section .faq-accordion-content .faq-accordion-3.resize{
-    height: 300px;
-  }
-  .faq-accordion-section .faq-accordion-content .faq-accordion-1.resize{
     height: 240px;
   }
   
 
   /* FOOTER */
   footer {
-    padding: 40px 10px;
+    padding: 40px 12px;
     flex-direction: column;
     gap: 40px;
   }
   footer > .footer-text > p {
     margin-bottom: 50px;
-    font-size: 9px;
+    font-size: 10px;
   }
   footer > .footer-text > h3{
-    font-size: 10px;
+    font-size: 12px;
   }
   footer > .footer-text > .footer-socials > .footer-socials-icons > a{
     font-size: 18px;
     width: 30px;
     height: 30px;
-  }
-  footer > .utility-links > .utility-links-cols > h3{
-    font-size: 12px;
-  }
-  footer > .utility-links > .utility-links-cols > a{
-    font-size: 10px;
   }
   footer > .utility-links {
     gap: 40px;
@@ -4305,8 +2692,1619 @@ footer > .footer-copyright > p {
     bottom: 40px;
   }
   footer > .footer-copyright > p{
-    font-size: 8px;
+    font-size: 10px;
 }
+}
+@media(320px <= width <= 360px){
+  body.static {
+    overflow-y: hidden;
+  }
+  /* HEADER */
+  header {
+    height: 80vh;
+  }
+  header > nav {
+    width: 100vw;
+  }
+  header > .small-screen-nav-list {
+    display: flex;
+    box-sizing: border-box;
+    overflow: scroll;
+    overflow-x: hidden;
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    padding-bottom: 20px;
+  }
+  header > .small-screen-nav-list.display {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  header > .small-screen-nav-list ul {
+    margin: 100px 20px;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  header > .small-screen-nav-list > ul > li > button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    color: #fff;
+    background-color: transparent;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  header > .small-screen-nav-list > ul > li > .small-screen-mirror-trade > i,
+  header > .small-screen-nav-list > ul > li > .small-screen-planning > i,
+  header > .small-screen-nav-list > ul > li > .small-screen-about > i {
+    transition: rotate 0.3s ease-in-out;
+  }
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-mirror-trade
+    > i.rotate,
+  header > .small-screen-nav-list > ul > li > .small-screen-planning > i.rotate,
+  header > .small-screen-nav-list > ul > li > .small-screen-about > i.rotate {
+    rotate: 180deg;
+  }
+  header > .small-screen-nav-list > ul > li > .small-screen-home {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-mirror-trade-dropdown,
+  header > .small-screen-nav-list > ul > li > .small-screen-planning-dropdown,
+  header > .small-screen-nav-list > ul > li > .small-screen-about-dropdown {
+    border: 1px solid #fff;
+    margin-top: 0;
+    padding: 0 20px;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-about-dropdown.show {
+    border: 1px solid #fff;
+    margin-top: 40px;
+    padding: 20px;
+    height: 260px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+  }
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-mirror-trade-dropdown.show {
+    margin-top: 40px;
+    padding: 20px;
+    height: 490px;
+    opacity: 1;
+    visibility: visible;
+  }
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-planning-dropdown.show {
+    margin-top: 40px;
+    padding: 20px;
+    height: 140px;
+    opacity: 1;
+    visibility: visible;
+  }
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-mirror-trade-dropdown
+    > ul,
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-planning-dropdown
+    > ul,
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-about-dropdown
+    > ul {
+    width: 100%;
+    margin: 0;
+  }
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-mirror-trade-dropdown
+    > ul
+    > li
+    > a,
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-planning-dropdown
+    > ul
+    > li
+    > a,
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-about-dropdown
+    > ul
+    > li
+    > a {
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+  }
+  header > .small-screen-nav-list ul > .small-screen-navlist-btns {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+    gap: 20px;
+  }
+  header > .small-screen-nav-list ul > .small-screen-navlist-btns > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+  header
+    > .small-screen-nav-list
+    ul
+    > .small-screen-navlist-btns
+    > .small-screen-login {
+    color: #1e90ff;
+    background-color: transparent;
+    border: 1px solid #1e90ff;
+    padding: 10px 0;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  header
+    > .small-screen-nav-list
+    ul
+    > .small-screen-navlist-btns
+    > .small-screen-login:hover {
+    color: #fff;
+    background-color: #1e90ff;
+    border: 1px solid #1e90ff;
+  }
+  header
+    > .small-screen-nav-list
+    ul
+    > .small-screen-navlist-btns
+    > .small-screen-register {
+    color: #fff;
+    background-color: #1e90ff;
+    border: 1px solid #1e90ff;
+    padding: 10px 0;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  header
+    > .small-screen-nav-list
+    ul
+    > .small-screen-navlist-btns
+    > .small-screen-register:hover {
+    color: #1e90ff;
+    background-color: transparent;
+    border: 1px solid #1e90ff;
+  }
+  header > .small-screen-nav-list > a > .small-screen-nav-list-logo {
+    width: 120px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  header > .small-screen-nav-list > .bi-x-lg {
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  header > nav > .bi-list {
+    display: flex;
+    padding-right: 12px;
+    font-size: 16px;
+  }
+  header > nav > .nav-links-grp1 > .nav-links {
+    display: none;
+  }
+  header > nav > .nav-links-grp2 {
+    display: none;
+  }
+  header > nav > .nav-links-grp1 > .logo {
+    padding-left: 12px;
+  }
+  header > nav > .nav-links-grp1 > .logo > img {
+    width: 130px;
+  }
+  .header-content {
+    padding: 150px 0 0 0;
+    width: 100%;
+  }
+  .header-content > .header-content-text {
+    width: 100%;
+  }
+  .header-content > .header-content-text > h1 {
+    font-size: 20px;
+    width: 100%;
+    padding: 0 12px;
+  }
+  .header-content > .header-content-text > p {
+    font-size: 10px;
+    padding: 0 20px;
+  }
+  .header-content > .start-copying-btn {
+    width: 200px;
+    margin-left: 20px;
+    height: 20px;
+    padding: 15px 20px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  /* HEADER  */
+
+  /* COPY TRADING */
+  .copy-trading {
+    padding: 60px 12px;
+    background-color: #e2f6ff;
+  }
+  .copy-trading > h1 {
+    font-size: 35px;
+  }
+  .copy-trading > .copy-trading-info {
+    flex-direction: column;
+    gap: 0;
+    padding: 40px 20px;
+  }
+  .copy-trading > .copy-trading-info > .copy-trading-info-text {
+    width: 100%;
+  }
+  .copy-trading > .copy-trading-info > .copy-trading-info-text > p {
+    font-size: 10px;
+  }
+  .copy-trading > .copy-trading-info > .copy-trading-info-text > h2 {
+    font-size: 25px;
+  }
+  .copy-trading > .copy-trading-info > .copy-trading-info-btn > a {
+    margin-top: 50px;
+  }
+
+  /* INVESTOR RELATIONS */
+  .investor-relations {
+    padding: 60px 12px;
+    background-color: #e2f6ff;
+  }
+  .investor-relations > h1 {
+    font-size: 35px;
+  }
+  .investor-relations > .investor-relations-info {
+    flex-direction: column;
+    gap: 0;
+    padding: 40px 20px;
+  }
+  .investor-relations
+    > .investor-relations-info
+    > .investor-relations-info-text {
+    width: 100%;
+  }
+  .investor-relations
+    > .investor-relations-info
+    > .investor-relations-info-text
+    > p {
+    font-size: 11px;
+  }
+  .investor-relations
+    > .investor-relations-info
+    > .investor-relations-info-text
+    > h2 {
+    font-size: 25px;
+  }
+  .investor-relations
+    > .investor-relations-info
+    > .investor-relations-info-btn
+    > a {
+    margin-top: 50px;
+  }
+
+  /* WHY TO COPYTRADE */
+  .why-to-copytrade {
+    padding: 60px 12px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top left;
+  }
+  .why-to-copytrade > h1 {
+    font-size: 22px;
+  }
+  .why-to-copytrade > p {
+    font-size: 13px;
+  }
+  .why-to-copytrade
+    > .why-to-copytrade-reasons-section
+    > .why-to-copytrade-reasons {
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  .why-to-copytrade > .why-to-copytrade-reasons-section {
+    padding: 0;
+    width: 100%;
+  }
+  .why-to-copytrade
+    > .why-to-copytrade-reasons-section
+    > .why-to-copytrade-reasons
+    > .why-to-copytrade-individual-reasons {
+    flex-direction: row;
+    width: 100%;
+  }
+  .why-to-copytrade
+    > .why-to-copytrade-reasons-section
+    > .why-to-copytrade-reasons
+    > .why-to-copytrade-individual-reasons
+    > span {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .why-to-copytrade
+    > .why-to-copytrade-reasons-section
+    > .why-to-copytrade-reasons
+    > .why-to-copytrade-individual-reasons
+    > span
+    > h2 {
+    font-size: 14px;
+    text-align: left;
+  }
+  .why-to-copytrade
+    > .why-to-copytrade-reasons-section
+    > .why-to-copytrade-reasons
+    > .why-to-copytrade-individual-reasons
+    > span
+    > p {
+    font-size: 10px;
+    text-align: left;
+  }
+
+  /* HOW IT WORKS */
+  .how-it-works {
+    padding: 60px 12px;
+  }
+  .how-it-works > .how-it-works-text > h1 {
+    font-size: 22px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .how-it-works > .how-it-works-text > p {
+    font-size: 13px;
+    text-align: left;
+    margin-bottom: 25px;
+  }
+  .how-it-works > .how-it-works-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .how-it-works > .how-it-works-list > .how-it-works-list-content {
+    flex-direction: row;
+  }
+  .how-it-works > .how-it-works-list > .how-it-works-list-content > p{
+    font-size: 14px;
+  }
+  .how-it-works > .how-it-works-list > .how-it-works-list-content > h1 {
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
+  }
+  /* FAQ SECTION */
+  .faq {
+    padding: 80px 12px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top left;
+  }
+  .faq > .faq-heading {
+    font-size: 40px;
+  }
+  .faq > .faq-accordion-section {
+    padding: 0;
+  }
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-1
+    > .faq-accordion-label-btn-1
+    > .faq-accordion-question-1,
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-2
+    > .faq-accordion-label-btn-2
+    > .faq-accordion-question-2,
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-3
+    > .faq-accordion-label-btn-3
+    > .faq-accordion-question-3,
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-4
+    > .faq-accordion-label-btn-4
+    > .faq-accordion-question-4,
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-5
+    > .faq-accordion-label-btn-5
+    > .faq-accordion-question-5 {
+    font-size: 13px;
+    width: 100%;
+    text-align: left;
+  }
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-1
+    > .faq-accordion-text-1
+    > p,
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-2
+    > .faq-accordion-text-2
+    > p,
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-3
+    > .faq-accordion-text-3
+    > p,
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-4
+    > .faq-accordion-text-4
+    > p,
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-5
+    .faq-accordion-text-5
+    > p {
+    font-size: 10px;
+  }
+  .faq-accordion-section .faq-accordion-content .faq-accordion-2.resize,
+  .faq-accordion-section .faq-accordion-content .faq-accordion-3.resize,
+  .faq-accordion-section .faq-accordion-content .faq-accordion-4.resize,
+  .faq-accordion-section .faq-accordion-content .faq-accordion-5.resize{
+    height: 200px;
+  }
+  
+
+  /* FOOTER */
+  footer {
+    padding: 40px 12px;
+    flex-direction: column;
+    gap: 40px;
+  }
+  footer > .footer-text > p {
+    margin-bottom: 50px;
+    font-size: 10px;
+  }
+  footer > .footer-text > h3{
+    font-size: 12px;
+  }
+  footer > .footer-text > .footer-socials > .footer-socials-icons > a{
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+  }
+  footer > .utility-links {
+    gap: 40px;
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+  footer > .footer-copyright {
+    bottom: 40px;
+  }
+  footer > .footer-copyright > p{
+    font-size: 10px;
+  }
+}
+@media(360px <= width <= 390px){
+  body.static {
+    overflow-y: hidden;
+  }
+  /* HEADER */
+  header {
+    height: 80vh;
+  }
+  header > nav {
+    width: 100vw;
+  }
+  header > .small-screen-nav-list {
+    display: flex;
+    box-sizing: border-box;
+    overflow: scroll;
+    overflow-x: hidden;
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    padding-bottom: 20px;
+  }
+  header > .small-screen-nav-list.display {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  header > .small-screen-nav-list ul {
+    margin: 100px 20px;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  header > .small-screen-nav-list > ul > li > button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    color: #fff;
+    background-color: transparent;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  header > .small-screen-nav-list > ul > li > .small-screen-mirror-trade > i,
+  header > .small-screen-nav-list > ul > li > .small-screen-planning > i,
+  header > .small-screen-nav-list > ul > li > .small-screen-about > i {
+    transition: rotate 0.3s ease-in-out;
+  }
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-mirror-trade
+    > i.rotate,
+  header > .small-screen-nav-list > ul > li > .small-screen-planning > i.rotate,
+  header > .small-screen-nav-list > ul > li > .small-screen-about > i.rotate {
+    rotate: 180deg;
+  }
+  header > .small-screen-nav-list > ul > li > .small-screen-home {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-mirror-trade-dropdown,
+  header > .small-screen-nav-list > ul > li > .small-screen-planning-dropdown,
+  header > .small-screen-nav-list > ul > li > .small-screen-about-dropdown {
+    border: 1px solid #fff;
+    margin-top: 0;
+    padding: 0 20px;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-about-dropdown.show {
+    border: 1px solid #fff;
+    margin-top: 40px;
+    padding: 20px;
+    height: 260px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+  }
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-mirror-trade-dropdown.show {
+    margin-top: 40px;
+    padding: 20px;
+    height: 490px;
+    opacity: 1;
+    visibility: visible;
+  }
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-planning-dropdown.show {
+    margin-top: 40px;
+    padding: 20px;
+    height: 140px;
+    opacity: 1;
+    visibility: visible;
+  }
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-mirror-trade-dropdown
+    > ul,
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-planning-dropdown
+    > ul,
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-about-dropdown
+    > ul {
+    width: 100%;
+    margin: 0;
+  }
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-mirror-trade-dropdown
+    > ul
+    > li
+    > a,
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-planning-dropdown
+    > ul
+    > li
+    > a,
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-about-dropdown
+    > ul
+    > li
+    > a {
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+  }
+  header > .small-screen-nav-list ul > .small-screen-navlist-btns {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+    gap: 20px;
+  }
+  header > .small-screen-nav-list ul > .small-screen-navlist-btns > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+  header
+    > .small-screen-nav-list
+    ul
+    > .small-screen-navlist-btns
+    > .small-screen-login {
+    color: #1e90ff;
+    background-color: transparent;
+    border: 1px solid #1e90ff;
+    padding: 10px 0;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  header
+    > .small-screen-nav-list
+    ul
+    > .small-screen-navlist-btns
+    > .small-screen-login:hover {
+    color: #fff;
+    background-color: #1e90ff;
+    border: 1px solid #1e90ff;
+  }
+  header
+    > .small-screen-nav-list
+    ul
+    > .small-screen-navlist-btns
+    > .small-screen-register {
+    color: #fff;
+    background-color: #1e90ff;
+    border: 1px solid #1e90ff;
+    padding: 10px 0;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  header
+    > .small-screen-nav-list
+    ul
+    > .small-screen-navlist-btns
+    > .small-screen-register:hover {
+    color: #1e90ff;
+    background-color: transparent;
+    border: 1px solid #1e90ff;
+  }
+  header > .small-screen-nav-list > a > .small-screen-nav-list-logo {
+    width: 150px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  header > .small-screen-nav-list > .bi-x-lg {
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  header > nav > .bi-list {
+    display: flex;
+    padding-right: 15px;
+  }
+  header > nav > .nav-links-grp1 > .nav-links {
+    display: none;
+  }
+  header > nav > .nav-links-grp2 {
+    display: none;
+  }
+  header > nav > .nav-links-grp1 > .logo {
+    padding-left: 15px;
+  }
+  header > nav > .nav-links-grp1 > .logo > img {
+    width: 150px;
+  }
+  .header-content {
+    padding: 200px 0 0 0;
+    width: 100%;
+  }
+  .header-content > .header-content-text {
+    width: 100%;
+  }
+  .header-content > .header-content-text > h1 {
+    font-size: 25px;
+    width: 100%;
+    padding: 0 20px;
+  }
+  .header-content > .header-content-text > p {
+    font-size: 11px;
+    padding: 0 20px;
+  }
+  .header-content > .start-copying-btn {
+    width: 200px;
+    margin-left: 20px;
+    height: 20px;
+    padding: 15px 20px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  /* HEADER  */
+
+  /* COPY TRADING */
+  .copy-trading {
+    padding: 60px 20px;
+    background-color: #e2f6ff;
+  }
+  .copy-trading > h1 {
+    font-size: 35px;
+  }
+  .copy-trading > .copy-trading-info {
+    flex-direction: column;
+    gap: 0;
+    padding: 40px 20px;
+  }
+  .copy-trading > .copy-trading-info > .copy-trading-info-text {
+    width: 100%;
+  }
+  .copy-trading > .copy-trading-info > .copy-trading-info-text > p {
+    font-size: 11px;
+  }
+  .copy-trading > .copy-trading-info > .copy-trading-info-text > h2 {
+    font-size: 28px;
+  }
+  .copy-trading > .copy-trading-info > .copy-trading-info-btn > a {
+    margin-top: 50px;
+  }
+
+  /* INVESTOR RELATIONS */
+  .investor-relations {
+    padding: 60px 20px;
+    background-color: #e2f6ff;
+  }
+  .investor-relations > h1 {
+    font-size: 35px;
+  }
+  .investor-relations > .investor-relations-info {
+    flex-direction: column;
+    gap: 0;
+    padding: 40px 20px;
+  }
+  .investor-relations
+    > .investor-relations-info
+    > .investor-relations-info-text {
+    width: 100%;
+  }
+  .investor-relations
+    > .investor-relations-info
+    > .investor-relations-info-text
+    > p {
+    font-size: 11px;
+  }
+  .investor-relations
+    > .investor-relations-info
+    > .investor-relations-info-text
+    > h2 {
+    font-size: 28px;
+  }
+  .investor-relations
+    > .investor-relations-info
+    > .investor-relations-info-btn
+    > a {
+    margin-top: 50px;
+  }
+
+  /* WHY TO COPYTRADE */
+  .why-to-copytrade {
+    padding: 60px 20px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top left;
+  }
+  .why-to-copytrade > h1 {
+    font-size: 22px;
+  }
+  .why-to-copytrade > p {
+    font-size: 13px;
+  }
+  .why-to-copytrade
+    > .why-to-copytrade-reasons-section
+    > .why-to-copytrade-reasons {
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  .why-to-copytrade > .why-to-copytrade-reasons-section {
+    padding: 0;
+    width: 100%;
+  }
+  .why-to-copytrade
+    > .why-to-copytrade-reasons-section
+    > .why-to-copytrade-reasons
+    > .why-to-copytrade-individual-reasons {
+    flex-direction: row;
+    width: 100%;
+  }
+  .why-to-copytrade
+    > .why-to-copytrade-reasons-section
+    > .why-to-copytrade-reasons
+    > .why-to-copytrade-individual-reasons
+    > span {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .why-to-copytrade
+    > .why-to-copytrade-reasons-section
+    > .why-to-copytrade-reasons
+    > .why-to-copytrade-individual-reasons
+    > span
+    > h2 {
+    font-size: 16px;
+    text-align: left;
+  }
+  .why-to-copytrade
+    > .why-to-copytrade-reasons-section
+    > .why-to-copytrade-reasons
+    > .why-to-copytrade-individual-reasons
+    > span
+    > p {
+    font-size: 10px;
+    text-align: left;
+  }
+
+  /* HOW IT WORKS */
+  .how-it-works {
+    padding: 60px 20px;
+  }
+  .how-it-works > .how-it-works-text > h1 {
+    font-size: 22px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .how-it-works > .how-it-works-text > p {
+    font-size: 15px;
+    text-align: left;
+    margin-bottom: 25px;
+  }
+  .how-it-works > .how-it-works-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .how-it-works > .how-it-works-list > .how-it-works-list-content {
+    flex-direction: row;
+  }
+  .how-it-works > .how-it-works-list > .how-it-works-list-content > h1 {
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
+  }
+  /* FAQ SECTION */
+  .faq {
+    padding: 80px 20px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top left;
+  }
+  .faq > .faq-heading {
+    font-size: 40px;
+  }
+  .faq > .faq-accordion-section {
+    padding: 0;
+  }
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-1
+    > .faq-accordion-label-btn-1
+    > .faq-accordion-question-1,
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-2
+    > .faq-accordion-label-btn-2
+    > .faq-accordion-question-2,
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-3
+    > .faq-accordion-label-btn-3
+    > .faq-accordion-question-3,
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-4
+    > .faq-accordion-label-btn-4
+    > .faq-accordion-question-4,
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-5
+    > .faq-accordion-label-btn-5
+    > .faq-accordion-question-5 {
+    font-size: 13px;
+    width: 100%;
+    text-align: left;
+  }
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-1
+    > .faq-accordion-text-1
+    > p,
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-2
+    > .faq-accordion-text-2
+    > p,
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-3
+    > .faq-accordion-text-3
+    > p,
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-4
+    > .faq-accordion-text-4
+    > p,
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-5
+    .faq-accordion-text-5
+    > p {
+    font-size: 10px;
+  }
+  .faq-accordion-section .faq-accordion-content .faq-accordion-2.resize,
+  .faq-accordion-section .faq-accordion-content .faq-accordion-3.resize,
+  .faq-accordion-section .faq-accordion-content .faq-accordion-4.resize{
+    height: 200px;
+  }
+  .faq-accordion-section .faq-accordion-content .faq-accordion-5.resize{
+    height: 180px;
+  }
+  
+
+  /* FOOTER */
+  footer {
+    padding: 40px 20px;
+    flex-direction: column;
+    gap: 40px;
+  }
+  footer > .footer-text > p {
+    margin-bottom: 50px;
+  }
+  footer > .utility-links {
+    gap: 40px;
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+  footer > .footer-copyright {
+    bottom: 40px;
+  }
+  footer > .footer-copyright > p{
+    font-size: 10px;
+  }
+
+}
+@media (390px <= width <= 575px) {
+  body.static {
+    overflow-y: hidden;
+  }
+  /* HEADER */
+  header {
+    height: 80vh;
+  }
+  header > nav {
+    width: 100vw;
+  }
+  header > .small-screen-nav-list {
+    display: flex;
+    box-sizing: border-box;
+    overflow: scroll;
+    overflow-x: hidden;
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    padding-bottom: 20px;
+  }
+  header > .small-screen-nav-list.display {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  header > .small-screen-nav-list ul {
+    margin: 100px 20px;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  header > .small-screen-nav-list > ul > li > button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    color: #fff;
+    background-color: transparent;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  header > .small-screen-nav-list > ul > li > .small-screen-mirror-trade > i,
+  header > .small-screen-nav-list > ul > li > .small-screen-planning > i,
+  header > .small-screen-nav-list > ul > li > .small-screen-about > i {
+    transition: rotate 0.3s ease-in-out;
+  }
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-mirror-trade
+    > i.rotate,
+  header > .small-screen-nav-list > ul > li > .small-screen-planning > i.rotate,
+  header > .small-screen-nav-list > ul > li > .small-screen-about > i.rotate {
+    rotate: 180deg;
+  }
+  header > .small-screen-nav-list > ul > li > .small-screen-home {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-mirror-trade-dropdown,
+  header > .small-screen-nav-list > ul > li > .small-screen-planning-dropdown,
+  header > .small-screen-nav-list > ul > li > .small-screen-about-dropdown {
+    border: 1px solid #fff;
+    margin-top: 0;
+    padding: 0 20px;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-about-dropdown.show {
+    border: 1px solid #fff;
+    margin-top: 40px;
+    padding: 20px;
+    height: 260px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+  }
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-mirror-trade-dropdown.show {
+    margin-top: 40px;
+    padding: 20px;
+    height: 490px;
+    opacity: 1;
+    visibility: visible;
+  }
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-planning-dropdown.show {
+    margin-top: 40px;
+    padding: 20px;
+    height: 140px;
+    opacity: 1;
+    visibility: visible;
+  }
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-mirror-trade-dropdown
+    > ul,
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-planning-dropdown
+    > ul,
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-about-dropdown
+    > ul {
+    width: 100%;
+    margin: 0;
+  }
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-mirror-trade-dropdown
+    > ul
+    > li
+    > a,
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-planning-dropdown
+    > ul
+    > li
+    > a,
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-about-dropdown
+    > ul
+    > li
+    > a {
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+  }
+  header > .small-screen-nav-list ul > .small-screen-navlist-btns {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+    gap: 20px;
+  }
+  header > .small-screen-nav-list ul > .small-screen-navlist-btns > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+  header
+    > .small-screen-nav-list
+    ul
+    > .small-screen-navlist-btns
+    > .small-screen-login {
+    color: #1e90ff;
+    background-color: transparent;
+    border: 1px solid #1e90ff;
+    padding: 10px 0;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  header
+    > .small-screen-nav-list
+    ul
+    > .small-screen-navlist-btns
+    > .small-screen-login:hover {
+    color: #fff;
+    background-color: #1e90ff;
+    border: 1px solid #1e90ff;
+  }
+  header
+    > .small-screen-nav-list
+    ul
+    > .small-screen-navlist-btns
+    > .small-screen-register {
+    color: #fff;
+    background-color: #1e90ff;
+    border: 1px solid #1e90ff;
+    padding: 10px 0;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  header
+    > .small-screen-nav-list
+    ul
+    > .small-screen-navlist-btns
+    > .small-screen-register:hover {
+    color: #1e90ff;
+    background-color: transparent;
+    border: 1px solid #1e90ff;
+  }
+  header > .small-screen-nav-list > a > .small-screen-nav-list-logo {
+    width: 150px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  header > .small-screen-nav-list > .bi-x-lg {
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  header > nav > .bi-list {
+    display: flex;
+    padding-right: 15px;
+  }
+  header > nav > .nav-links-grp1 > .nav-links {
+    display: none;
+  }
+  header > nav > .nav-links-grp2 {
+    display: none;
+  }
+  header > nav > .nav-links-grp1 > .logo {
+    padding-left: 15px;
+  }
+  header > nav > .nav-links-grp1 > .logo > img {
+    width: 150px;
+  }
+  .header-content {
+    padding: 200px 0 0 0;
+    width: 100%;
+  }
+  .header-content > .header-content-text {
+    width: 100%;
+  }
+  .header-content > .header-content-text > h1 {
+    font-size: 25px;
+    width: 100%;
+    padding: 0 20px;
+  }
+  .header-content > .header-content-text > p {
+    font-size: 11px;
+    padding: 0 20px;
+  }
+  .header-content > .start-copying-btn {
+    width: 200px;
+    margin-left: 20px;
+    height: 20px;
+    padding: 15px 20px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  /* HEADER  */
+
+  /* COPY TRADING */
+  .copy-trading {
+    padding: 60px 20px;
+    background-color: #e2f6ff;
+  }
+  .copy-trading > h1 {
+    font-size: 35px;
+  }
+  .copy-trading > .copy-trading-info {
+    flex-direction: column;
+    gap: 0;
+    padding: 40px 20px;
+  }
+  .copy-trading > .copy-trading-info > .copy-trading-info-text {
+    width: 100%;
+  }
+  .copy-trading > .copy-trading-info > .copy-trading-info-text > p {
+    font-size: 12px;
+  }
+  .copy-trading > .copy-trading-info > .copy-trading-info-text > h2 {
+    font-size: 28px;
+  }
+  .copy-trading > .copy-trading-info > .copy-trading-info-btn > a {
+    margin-top: 50px;
+  }
+
+  /* INVESTOR RELATIONS */
+  .investor-relations {
+    padding: 60px 20px;
+    background-color: #e2f6ff;
+  }
+  .investor-relations > h1 {
+    font-size: 35px;
+  }
+  .investor-relations > .investor-relations-info {
+    flex-direction: column;
+    gap: 0;
+    padding: 40px 20px;
+  }
+  .investor-relations
+    > .investor-relations-info
+    > .investor-relations-info-text {
+    width: 100%;
+  }
+  .investor-relations
+    > .investor-relations-info
+    > .investor-relations-info-text
+    > p {
+    font-size: 12px;
+  }
+  .investor-relations
+    > .investor-relations-info
+    > .investor-relations-info-text
+    > h2 {
+    font-size: 28px;
+  }
+  .investor-relations
+    > .investor-relations-info
+    > .investor-relations-info-btn
+    > a {
+    margin-top: 50px;
+  }
+
+  /* WHY TO COPYTRADE */
+  .why-to-copytrade {
+    padding: 60px 20px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top left;
+  }
+  .why-to-copytrade > h1 {
+    font-size: 22px;
+  }
+  .why-to-copytrade > p {
+    font-size: 13px;
+  }
+  .why-to-copytrade
+    > .why-to-copytrade-reasons-section
+    > .why-to-copytrade-reasons {
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  .why-to-copytrade > .why-to-copytrade-reasons-section {
+    padding: 0;
+    width: 100%;
+  }
+  .why-to-copytrade
+    > .why-to-copytrade-reasons-section
+    > .why-to-copytrade-reasons
+    > .why-to-copytrade-individual-reasons {
+    flex-direction: row;
+    width: 100%;
+  }
+  .why-to-copytrade
+    > .why-to-copytrade-reasons-section
+    > .why-to-copytrade-reasons
+    > .why-to-copytrade-individual-reasons
+    > span {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .why-to-copytrade
+    > .why-to-copytrade-reasons-section
+    > .why-to-copytrade-reasons
+    > .why-to-copytrade-individual-reasons
+    > span
+    > h2 {
+    font-size: 16px;
+    text-align: left;
+  }
+  .why-to-copytrade
+    > .why-to-copytrade-reasons-section
+    > .why-to-copytrade-reasons
+    > .why-to-copytrade-individual-reasons
+    > span
+    > p {
+    font-size: 10px;
+    text-align: left;
+  }
+
+  /* HOW IT WORKS */
+  .how-it-works {
+    padding: 60px 20px;
+  }
+  .how-it-works > .how-it-works-text > h1 {
+    font-size: 22px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .how-it-works > .how-it-works-text > p {
+    font-size: 15px;
+    text-align: left;
+    margin-bottom: 25px;
+  }
+  .how-it-works > .how-it-works-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .how-it-works > .how-it-works-list > .how-it-works-list-content {
+    flex-direction: row;
+  }
+  .how-it-works > .how-it-works-list > .how-it-works-list-content > h1 {
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
+  }
+  /* FAQ SECTION */
+  .faq {
+    padding: 80px 20px;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top left;
+  }
+  .faq > .faq-heading {
+    font-size: 40px;
+  }
+  .faq > .faq-accordion-section {
+    padding: 0;
+  }
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-1
+    > .faq-accordion-label-btn-1
+    > .faq-accordion-question-1,
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-2
+    > .faq-accordion-label-btn-2
+    > .faq-accordion-question-2,
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-3
+    > .faq-accordion-label-btn-3
+    > .faq-accordion-question-3,
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-4
+    > .faq-accordion-label-btn-4
+    > .faq-accordion-question-4,
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-5
+    > .faq-accordion-label-btn-5
+    > .faq-accordion-question-5 {
+    font-size: 14px;
+    width: 100%;
+    text-align: left;
+  }
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-1
+    > .faq-accordion-text-1
+    > p,
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-2
+    > .faq-accordion-text-2
+    > p,
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-3
+    > .faq-accordion-text-3
+    > p,
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-4
+    > .faq-accordion-text-4
+    > p,
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-5
+    .faq-accordion-text-5
+    > p {
+    font-size: 12px;
+  }
+  .faq-accordion-section .faq-accordion-content .faq-accordion-2.resize,
+  .faq-accordion-section .faq-accordion-content .faq-accordion-3.resize,
+  .faq-accordion-section .faq-accordion-content .faq-accordion-4.resize,
+  .faq-accordion-section .faq-accordion-content .faq-accordion-5.resize {
+    height: 220px;
+  }
+
+  /* FOOTER */
+  footer {
+    padding: 40px 20px;
+    flex-direction: column;
+    gap: 40px;
+  }
+  footer > .footer-text > p {
+    margin-bottom: 50px;
+  }
+  footer > .utility-links {
+    gap: 40px;
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+  footer > .footer-copyright {
+    bottom: 40px;
+  }
+  footer > .footer-copyright > p{
+    font-size: 10px;
+  }
 }
 /* SMALL SCREEN MEDIA QUERY */
 
@@ -5384,7 +5382,7 @@ footer > .footer-copyright > p {
 
 
 
-@media(769px <= width <= 991px){
+@media(769px <= width <= 990px){
 
   body.static {
     overflow-y: hidden;
@@ -5925,7 +5923,7 @@ footer > .footer-copyright > p {
 /* MEDIUM SCREEN MEDIA QUERY */
 
 /* LARGE SCREEN MEDIA QUERY */
-@media(991px <= width <= 1101px){
+@media(990px <= width <= 1100px){
 
   body.static {
     overflow-y: hidden;
@@ -6461,7 +6459,7 @@ footer > .footer-copyright > p {
   }
 }
 
-@media(1101px <= width <= 1201px){
+@media(1100px <= width <= 1200px){
   body.static {
     overflow-y: hidden;
   }
@@ -6721,7 +6719,7 @@ footer > .footer-copyright > p {
 }
 
 
-@media(1201px <= width <= 1300px){
+@media(1200px <= width <= 1300px){
 
   body.static {
     overflow-y: hidden;
