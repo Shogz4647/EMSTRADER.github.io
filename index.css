@@ -13,37 +13,10 @@ html,body {
   scroll-behavior: smooth;
 }
 /* TO TOP BTN */
-.to-top-btn {
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  background-color: #0f25c9;
-  border: none;
-  border-radius: 10px;
-  color: #fff;
-  font-size: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  text-decoration: none;
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.3s ease-in-out;
-}
-.to-top-btn:hover {
-  background-color: #0b1c9d;
-}
-.to-top-btn.show {
-  opacity: 1;
-  visibility: visible;
-}
 /* HEADER SECTION INCLUDING NAVBAR & SEARCH BAR */
 header {
   height: 100vh;
-  background-image: url(./images/financial-business-chart-with-diagrams-stock-numbers-showing-profits-losses_273081-440.avif);
+  background-image: url(./images/financial-business-chart-with-diagrams-stock-numbers-showing-profits-losses_273081-440.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -494,7 +467,7 @@ header
 /* WHY TO COPYTRADE */
 .why-to-copytrade {
   background: linear-gradient(to bottom, #0f1e93da, #081050b9),
-    url(./images/31fb7b6c808cb6d714a0e303c5a4119b.jpg);
+    url(./images/31fb7b6c808cb6d714a0e303c5a4119b_11zon.jpg);
   padding: 100px 80px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -563,7 +536,6 @@ header
   font-size: 25px;
   font-weight: 400;
   color: #fff;
-  text-align: left;
 }
 .why-to-copytrade
   > .why-to-copytrade-reasons-section
@@ -680,7 +652,7 @@ header
 .faq {
   padding: 80px 120px 150px;
   background: linear-gradient(to bottom, #0f1e93da, #081050b9),
-    url(./images/frequently-asked-questions-solution-concept.jpg);
+    url(./images/frequently-asked-questions-solution-concept_11zon\ \(2\).jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -1438,6 +1410,7 @@ footer > .footer-copyright > p {
     > span
     > h2 {
     font-size: 16px;
+    text-align: left;
   }
   .why-to-copytrade
     > .why-to-copytrade-reasons-section
@@ -1570,7 +1543,7 @@ footer > .footer-copyright > p {
     font-size: 10px;
   }
 }
-@media(360px <= width <= 391px){
+@media(361px <= width <= 391px){
   body.static {
     overflow-y: hidden;
   }
@@ -1962,6 +1935,7 @@ footer > .footer-copyright > p {
     > span
     > h2 {
     font-size: 16px;
+    text-align: left;
   }
   .why-to-copytrade
     > .why-to-copytrade-reasons-section
@@ -2099,7 +2073,7 @@ footer > .footer-copyright > p {
 
 }
 
-@media(320px <= width <= 360px){
+@media(321px <= width <= 360px){
   body.static {
     overflow-y: hidden;
   }
@@ -2492,6 +2466,7 @@ footer > .footer-copyright > p {
     > span
     > h2 {
     font-size: 14px;
+    text-align: left;
   }
   .why-to-copytrade
     > .why-to-copytrade-reasons-section
@@ -2636,7 +2611,548 @@ footer > .footer-copyright > p {
   footer > .footer-copyright > p{
     font-size: 10px;
   }
+}
+@media(290px <= width <= 320px){
+  body.static {
+    overflow-y: hidden;
+  }
+  /* HEADER */
+  header {
+    height: 80vh;
+  }
+  header > nav {
+    width: 100vw;
+  }
+  header > .small-screen-nav-list {
+    display: flex;
+    box-sizing: border-box;
+    overflow: scroll;
+    overflow-x: hidden;
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease-in-out;
+    padding-bottom: 20px;
+  }
+  header > .small-screen-nav-list.display {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+  }
+  header > .small-screen-nav-list ul {
+    margin: 100px 20px;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  header > .small-screen-nav-list > ul > li > button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    color: #fff;
+    background-color: transparent;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  header > .small-screen-nav-list > ul > li > .small-screen-mirror-trade > i,
+  header > .small-screen-nav-list > ul > li > .small-screen-planning > i,
+  header > .small-screen-nav-list > ul > li > .small-screen-about > i {
+    transition: rotate 0.3s ease-in-out;
+  }
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-mirror-trade
+    > i.rotate,
+  header > .small-screen-nav-list > ul > li > .small-screen-planning > i.rotate,
+  header > .small-screen-nav-list > ul > li > .small-screen-about > i.rotate {
+    rotate: 180deg;
+  }
+  header > .small-screen-nav-list > ul > li > .small-screen-home {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+  }
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-mirror-trade-dropdown,
+  header > .small-screen-nav-list > ul > li > .small-screen-planning-dropdown,
+  header > .small-screen-nav-list > ul > li > .small-screen-about-dropdown {
+    border: 1px solid #fff;
+    margin-top: 0;
+    padding: 0 20px;
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-about-dropdown.show {
+    border: 1px solid #fff;
+    margin-top: 40px;
+    padding: 20px;
+    height: 260px;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+  }
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-mirror-trade-dropdown.show {
+    margin-top: 40px;
+    padding: 20px;
+    height: 490px;
+    opacity: 1;
+    visibility: visible;
+  }
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-planning-dropdown.show {
+    margin-top: 40px;
+    padding: 20px;
+    height: 140px;
+    opacity: 1;
+    visibility: visible;
+  }
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-mirror-trade-dropdown
+    > ul,
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-planning-dropdown
+    > ul,
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-about-dropdown
+    > ul {
+    width: 100%;
+    margin: 0;
+  }
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-mirror-trade-dropdown
+    > ul
+    > li
+    > a,
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-planning-dropdown
+    > ul
+    > li
+    > a,
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-about-dropdown
+    > ul
+    > li
+    > a {
+    font-size: 12px;
+    color: #fff;
+    text-decoration: none;
+  }
+  header > .small-screen-nav-list ul > .small-screen-navlist-btns {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+    gap: 20px;
+  }
+  header > .small-screen-nav-list ul > .small-screen-navlist-btns > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+  header
+    > .small-screen-nav-list
+    ul
+    > .small-screen-navlist-btns
+    > .small-screen-login {
+    color: #1e90ff;
+    background-color: transparent;
+    border: 1px solid #1e90ff;
+    padding: 10px 0;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  header
+    > .small-screen-nav-list
+    ul
+    > .small-screen-navlist-btns
+    > .small-screen-login:hover {
+    color: #fff;
+    background-color: #1e90ff;
+    border: 1px solid #1e90ff;
+  }
+  header
+    > .small-screen-nav-list
+    ul
+    > .small-screen-navlist-btns
+    > .small-screen-register {
+    color: #fff;
+    background-color: #1e90ff;
+    border: 1px solid #1e90ff;
+    padding: 10px 0;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  header
+    > .small-screen-nav-list
+    ul
+    > .small-screen-navlist-btns
+    > .small-screen-register:hover {
+    color: #1e90ff;
+    background-color: transparent;
+    border: 1px solid #1e90ff;
+  }
+  header > .small-screen-nav-list > a > .small-screen-nav-list-logo {
+    width: 120px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+  }
+  header > .small-screen-nav-list > .bi-x-lg {
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+  header > nav > .bi-list {
+    display: flex;
+    padding-right: 12px;
+    font-size: 16px;
+  }
+  header > nav > .nav-links-grp1 > .nav-links {
+    display: none;
+  }
+  header > nav > .nav-links-grp2 {
+    display: none;
+  }
+  header > nav > .nav-links-grp1 > .logo {
+    padding-left: 12px;
+  }
+  header > nav > .nav-links-grp1 > .logo > img {
+    width: 130px;
+  }
+  .header-content {
+    padding: 150px 0 0 0;
+    width: 100%;
+  }
+  .header-content > .header-content-text {
+    width: 100%;
+  }
+  .header-content > .header-content-text > h1 {
+    font-size: 20px;
+    width: 100%;
+    padding: 0 12px;
+  }
+  .header-content > .header-content-text > p {
+    font-size: 10px;
+    padding: 0 20px;
+  }
+  .header-content > .start-copying-btn {
+    width: 200px;
+    margin-left: 20px;
+    height: 20px;
+    padding: 15px 20px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  /* HEADER  */
 
+  /* COPY TRADING */
+  .copy-trading {
+    padding: 60px 12px;
+    background-color: #e2f6ff;
+  }
+  .copy-trading > h1 {
+    font-size: 35px;
+  }
+  .copy-trading > .copy-trading-info {
+    flex-direction: column;
+    gap: 0;
+    padding: 40px 20px;
+  }
+  .copy-trading > .copy-trading-info > .copy-trading-info-text {
+    width: 100%;
+  }
+  .copy-trading > .copy-trading-info > .copy-trading-info-text > p {
+    font-size: 10px;
+  }
+  .copy-trading > .copy-trading-info > .copy-trading-info-text > h2 {
+    font-size: 25px;
+  }
+  .copy-trading > .copy-trading-info > .copy-trading-info-btn > a {
+    margin-top: 50px;
+  }
+
+  /* INVESTOR RELATIONS */
+  .investor-relations {
+    padding: 60px 12px;
+    background-color: #e2f6ff;
+  }
+  .investor-relations > h1 {
+    font-size: 35px;
+  }
+  .investor-relations > .investor-relations-info {
+    flex-direction: column;
+    gap: 0;
+    padding: 40px 20px;
+  }
+  .investor-relations
+    > .investor-relations-info
+    > .investor-relations-info-text {
+    width: 100%;
+  }
+  .investor-relations
+    > .investor-relations-info
+    > .investor-relations-info-text
+    > p {
+    font-size: 11px;
+  }
+  .investor-relations
+    > .investor-relations-info
+    > .investor-relations-info-text
+    > h2 {
+    font-size: 25px;
+  }
+  .investor-relations
+    > .investor-relations-info
+    > .investor-relations-info-btn
+    > a {
+    margin-top: 50px;
+  }
+
+  /* WHY TO COPYTRADE */
+  .why-to-copytrade {
+    padding: 60px 12px;
+  }
+  .why-to-copytrade > h1 {
+    font-size: 22px;
+  }
+  .why-to-copytrade > p {
+    font-size: 13px;
+  }
+  .why-to-copytrade
+    > .why-to-copytrade-reasons-section
+    > .why-to-copytrade-reasons {
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  .why-to-copytrade > .why-to-copytrade-reasons-section {
+    padding: 0;
+    width: 100%;
+  }
+  .why-to-copytrade
+    > .why-to-copytrade-reasons-section
+    > .why-to-copytrade-reasons
+    > .why-to-copytrade-individual-reasons {
+    flex-direction: row;
+    width: 100%;
+  }
+  .why-to-copytrade
+    > .why-to-copytrade-reasons-section
+    > .why-to-copytrade-reasons
+    > .why-to-copytrade-individual-reasons
+    > span {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .why-to-copytrade
+    > .why-to-copytrade-reasons-section
+    > .why-to-copytrade-reasons
+    > .why-to-copytrade-individual-reasons
+    > span
+    > h2 {
+    font-size: 14px;
+    text-align: left;
+  }
+  .why-to-copytrade
+    > .why-to-copytrade-reasons-section
+    > .why-to-copytrade-reasons
+    > .why-to-copytrade-individual-reasons
+    > span
+    > p {
+    font-size: 10px;
+    text-align: left;
+  }
+
+  /* HOW IT WORKS */
+  .how-it-works {
+    padding: 60px 12px;
+  }
+  .how-it-works > .how-it-works-text > h1 {
+    font-size: 22px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  .how-it-works > .how-it-works-text > p {
+    font-size: 13px;
+    text-align: left;
+    margin-bottom: 25px;
+  }
+  .how-it-works > .how-it-works-list {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .how-it-works > .how-it-works-list > .how-it-works-list-content {
+    flex-direction: row;
+  }
+  .how-it-works > .how-it-works-list > .how-it-works-list-content > p{
+    font-size: 14px;
+  }
+  .how-it-works > .how-it-works-list > .how-it-works-list-content > h1 {
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
+  }
+  /* FAQ SECTION */
+  .faq {
+    padding: 80px 12px;
+  }
+  .faq > .faq-heading {
+    font-size: 40px;
+  }
+  .faq > .faq-accordion-section {
+    padding: 0;
+  }
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-1
+    > .faq-accordion-label-btn-1
+    > .faq-accordion-question-1,
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-2
+    > .faq-accordion-label-btn-2
+    > .faq-accordion-question-2,
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-3
+    > .faq-accordion-label-btn-3
+    > .faq-accordion-question-3,
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-4
+    > .faq-accordion-label-btn-4
+    > .faq-accordion-question-4,
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-5
+    > .faq-accordion-label-btn-5
+    > .faq-accordion-question-5 {
+    font-size: 13px;
+    width: 100%;
+    text-align: left;
+  }
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-1
+    > .faq-accordion-text-1
+    > p,
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-2
+    > .faq-accordion-text-2
+    > p,
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-3
+    > .faq-accordion-text-3
+    > p,
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-4
+    > .faq-accordion-text-4
+    > p,
+  .faq-accordion-section
+    > .faq-accordion-content
+    > .faq-accordion-5
+    .faq-accordion-text-5
+    > p {
+    font-size: 10px;
+  }
+  .faq-accordion-section .faq-accordion-content .faq-accordion-1.resize,
+  .faq-accordion-section .faq-accordion-content .faq-accordion-2.resize,
+  .faq-accordion-section .faq-accordion-content .faq-accordion-4.resize,
+  .faq-accordion-section .faq-accordion-content .faq-accordion-5.resize{
+    height: 220px;
+  }
+  .faq-accordion-section .faq-accordion-content .faq-accordion-3.resize{
+    height: 240px;
+  }
+  
+
+  /* FOOTER */
+  footer {
+    padding: 40px 12px;
+    flex-direction: column;
+    gap: 40px;
+  }
+  footer > .footer-text > p {
+    margin-bottom: 50px;
+    font-size: 10px;
+  }
+  footer > .footer-text > h3{
+    font-size: 12px;
+  }
+  footer > .footer-text > .footer-socials > .footer-socials-icons > a{
+    font-size: 18px;
+    width: 30px;
+    height: 30px;
+  }
+  footer > .utility-links {
+    gap: 40px;
+    flex-direction: column;
+    margin-bottom: 60px;
+  }
+  footer > .footer-copyright {
+    bottom: 40px;
+  }
+  footer > .footer-copyright > p{
+    font-size: 10px;
+}
 }
 /* SMALL SCREEN MEDIA QUERY */
 
