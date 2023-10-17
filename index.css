@@ -467,7 +467,7 @@ header
 /* WHY TO COPYTRADE */
 .why-to-copytrade {
   background: linear-gradient(to bottom, #0f1e93da, #081050b9),
-    url(./images/31fb7b6c808cb6d714a0e303c5a4119b_11zon.jpg);
+    url(./images/31fb7b6c808cb6d714a0e303c5a4119b_11zon\ \(2\).jpg);
   padding: 100px 80px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -652,7 +652,7 @@ header
 .faq {
   padding: 80px 120px 150px;
   background: linear-gradient(to bottom, #0f1e93da, #081050b9),
-    url(./images/frequently-asked-questions-solution-concept_11zon\ \(2\).jpg);
+    url(./images/frequently-asked-questions-solution-concept_11zon\ \(4\).jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
