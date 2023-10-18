@@ -1,3 +1,10 @@
+// PRELOADER
+const Interval = function(){
+    const preLoader = document.getElementById('preloader');
+    preLoader.classList.add('interval');
+};
+window.addEventListener('load', Interval);
+
 // FAQ ACCORDION SECTION
 const faqAccordionBtn1 = document.querySelector('.faq-accordion-label-btn-1');
 faqAccordionBtn1.onclick = function(){
