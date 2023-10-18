@@ -1098,7 +1098,7 @@ footer > .footer-copyright > p {
   /* HEADER */
   header {
    box-sizing: border-box;
-   height: 50vh;
+   height: 70vh;
   }
   header > nav {
     width: 100vw;
