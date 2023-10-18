@@ -2239,7 +2239,6 @@ footer > .footer-copyright > p {
   /* HEADER */
   header {
    box-sizing: border-box;
-   height: 80vh;
   }
   header > nav {
     width: 100vw;
@@ -2494,7 +2493,7 @@ footer > .footer-copyright > p {
     width: 170px;
   }
   .header-content {
-    padding: 200px 0 0 0;
+    padding: 110px 0 0 0;
     width: 100%;
   }
   .header-content > .header-content-text {
