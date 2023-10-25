@@ -76,3 +76,17 @@ smallScreenAbBtn.onclick = function(){
 
 }
 
+
+// POPULAR TRADERS
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 2,
+    spaceBetween: 40,
+    freeMode: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    loop: true,
+    speed: 800,
+    
+  });

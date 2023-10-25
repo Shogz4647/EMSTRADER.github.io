@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fund Account</title>
+    <link rel="stylesheet" href="fund-account.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;0,6..12,1000;1,6..12,200;1,6..12,300;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900;1,6..12,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css"
+      integrity="sha512-oAvZuuYVzkcTc2dH5z1ZJup5OmSQ000qlfRvuoTTiyTBjwX1faoyearj8KdMq0LgsBTHMrRuMek7s+CxF8yE+w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <!-- PRELOADER -->
+    <div id="preloader">
+        <div class="loader"></div>
+      </div>
+
+    <!-- SIDEBAR -->
+    <section class="sidebar">
+        <i class="bi bi-x-lg"></i>
+        <a class="sidebar-img" href="index.html"><img src="./logo.png" alt=""></a>
+        <ul class="sidebar-links">
+            <li>
+                <a href="dashboard.html">
+                    <i class="bi bi-view-stacked"></i> 
+                    Dashboard
+                </a>
+            </li>
+            <li>
+                <a class="active" href="fund-account.html">
+                    <i class="bi bi-cash-stack"></i>
+                    Fund Account
+                </a>
+            </li>
+            <li>
+                <a href="withdraw.html">
+                    <i class="bi bi-wallet2"></i>
+                    Withdraw Funds
+                </a>
+            </li>
+            <li>
+                <a href="history.html">
+                    <i class="bi bi-hourglass-split"></i> 
+                    History
+                </a>
+            </li>
+            <li>
+                <a class="edit-profile" href="">
+                    <i class="bi bi-arrow-clockwise"></i> 
+                    Edit Profile
+                </a>
+            </li>
+        </ul>
+        <ul class="extra-links">
+            <li>
+                <a href="">
+                    <i class="bi bi-info-circle"></i> 
+                    Support
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="bi bi-box-arrow-in-left"></i> 
+                    Sign Out
+                </a>
+            </li>
+        </ul>
+    </section>
+    <!-- SIDEBAR -->
+
+    <!-- NAVBAR -->
+    <nav>
+        <i class="bi bi-list"></i>
+        <div class="nav-btns">
+            <button class="notification"><i class="bi bi-bell"></i></button>
+            <button class="profile">
+                <i class="bi bi-person"></i>
+                <h4 class="profile-name">Username <i class="bi bi-chevron-down"></i></h4>
+            </button>
+        </div>
+    </nav>
+    <!-- NAVBAR -->
+
+
+    <!-- MAIN BODY -->
+    <section class="main-body">
+        <h2 class="heading">FUND ACCOUNT</h2>
+        <div class="main-body-message">
+            <h3><span>NOTE:</span>Fees are included while processing your deposit</h3>
+            <div class="main-body-input">
+                <div class="main-body-input-1">
+                    <label for="input-1">Currency - USDT (TRC-20)</label>
+                    <input type="text" name="input-1" id="input-1" placeholder="TETHER (USDT)">
+                </div>
+                <div class="main-body-input-2">
+                    <label for="input-2">Amount in USD (min: $50 USD)</label>
+                    <input type="text" name="input-2" id="input-2" placeholder="0.00">
+                </div>
+                <a href="" >Continue To Deposit</a>
+            </div>
+        </div>
+
+        <div class="profile-dropdown">
+            <div class="profile-dropdown-name">
+                <i class="bi bi-person-fill"></i>
+                <div class="profile-dropdown-name-details">
+                    <h4 class="dropdown-username">Username</h4>
+                    <h5 class="dropdown-email">example@gmail.com</h5>
+                </div>
+            </div>
+            <div class="profile-dropdown-links">
+                <a class="view-profile" href=""><i class="bi bi-person-circle"></i>View Profile</a>
+                <a class="sign-out" href=""><i class="bi bi-box-arrow-in-left"></i> Sign Out</a>
+                <a href=""><i class="bi bi-arrow-repeat"></i> Change Password</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; 2014-2023 Essential Market Traders</p>
+    </footer>
+    <!-- MAIN BODY -->
+    
+<script defer src="fund-account.js"></script>
+</body>
+</html>

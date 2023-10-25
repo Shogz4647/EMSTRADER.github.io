@@ -27,7 +27,6 @@ body{
   top: 0;
   height: 100%;
   width: 100%;
-  background-color: #fff;
   z-index: 10000;
   transition: all 0.3s ease-out;
   background-color: #000021;
@@ -669,6 +668,151 @@ header
   font-weight: 300;
 }
 
+/* POPULAR TRADERS */
+.popular-traders{
+  background-color: #000021;
+  padding: 100px 200px;
+
+}
+.popular-traders h1{
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.popular-traders > h1 > span{
+  font-weight: 700;
+}
+.popular-traders > p{
+  color: #fff;
+  font-size: 17px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 27px;
+  margin-bottom: 50px;
+}
+.swiper {
+  width: 100%;
+  margin: 100px auto 0;
+  height: 50vh;
+}
+
+.swiper-slide {
+  position: relative;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.swiper-slide-text-1,
+.swiper-slide-text-2,
+.swiper-slide-text-3,
+.swiper-slide-text-4,
+.swiper-slide-text-5{
+  position: absolute;
+  bottom: 30px;
+  left: 20px;
+}
+.swiper-slide-text-1 > h3{
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 0;
+  font-family: 'montserrat';
+  font-weight: 500;
+}
+.swiper-slide-text-2 > h3{
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 0;
+  font-family: 'montserrat';
+  font-weight: 500;
+}
+.swiper-slide-text-3 > h3{
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 0;
+  font-family: 'montserrat';
+  font-weight: 500;
+}
+.swiper-slide-text-4 > h3{
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 0;
+  font-family: 'montserrat';
+  font-weight: 500;
+}
+.swiper-slide-text-5 > h3{
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 0;
+  font-family: 'montserrat';
+  font-weight: 500;
+}
+
+
+.swiper-slide-text-1 > h2{
+  font-size: 30px;
+  color: #86d115;
+  margin-bottom: 0;
+  font-family: 'montserrat';
+  margin-top: 0;
+  font-weight: 600;
+}
+.swiper-slide-text-2 > h2{
+  font-size: 30px;
+  color: #6fae0f;
+  margin-bottom: 0;
+  font-family: 'montserrat';
+  margin-top: 0;
+  font-weight: 600;
+}
+.swiper-slide-text-3 > h2{
+  font-size: 30px;
+  color: #6fae0f;
+  margin-bottom: 0;
+  font-family: 'montserrat';
+  margin-top: 0;
+  font-weight: 600;
+}
+.swiper-slide-text-4 > h2{
+  font-size: 30px;
+  color: #6fae0f;
+  margin-bottom: 0;
+  font-family: 'montserrat';
+  margin-top: 0;
+  font-weight: 600;
+}
+.swiper-slide-text-5 > h2{
+  font-size: 30px;
+  color: #6fae0f;
+  margin-bottom: 0;
+  font-family: 'montserrat';
+  margin-top: 0;
+  font-weight: 600;
+}
+.swiper .nav-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff36;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  transition: all 0.3s ease-in-out;
+}
+.swiper .nav-btn:hover{
+  background-color: #ffffff6a;
+}
+.swiper .nav-btn:before,
+.swiper .nav-btn:after{
+  color: #fff;
+  font-size: 25px;
+}
 /* HOW IT WORKS */
 .how-it-works {
   padding: 60px 150px;
@@ -1007,7 +1151,6 @@ footer > .footer-text > .footer-socials > h3 {
 footer > .footer-text > .footer-socials > .footer-socials-icons {
   display: flex;
   align-items: center;
-  gap: 20px;
 }
 footer > .footer-text > .footer-socials > .footer-socials-icons > a {
   display: flex;
@@ -1020,6 +1163,10 @@ footer > .footer-text > .footer-socials > .footer-socials-icons > a {
   font-size: 25px;
   border-radius: 50%;
   transition: all 0.3s ease-in-out;
+  margin-left: 20px;
+}
+footer > .footer-text > .footer-socials > .footer-socials-icons > .facebook{
+  margin-left: 0;
 }
 footer
   > .footer-text
@@ -1058,13 +1205,13 @@ footer > .utility-links {
 footer > .utility-links > .utility-links-cols {
   display: flex;
   flex-direction: column;
-  gap: 20px;
   width: 100%;
 }
 footer > .utility-links > .utility-links-cols > h3 {
   font-size: 15px;
   color: #fff;
   font-weight: 500;
+  margin-bottom: 20px;
 }
 footer > .utility-links > .utility-links-cols > a {
   font-size: 12px;
@@ -1073,6 +1220,7 @@ footer > .utility-links > .utility-links-cols > a {
   text-decoration: none;
   transition: all 0.3s ease-in-out;
   position: relative;
+  margin-bottom: 20px;
 }
 footer > .utility-links > .utility-links-cols > a:hover {
   color: #1e90ff;
@@ -1125,7 +1273,6 @@ footer > .footer-copyright > p {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
   }
   header > .small-screen-nav-list > ul > li > button {
     width: 100%;
@@ -1137,6 +1284,7 @@ footer > .footer-copyright > p {
     background-color: transparent;
     font-size: 14px;
     cursor: pointer;
+    margin-top: 40px;
   }
   header > .small-screen-nav-list > ul > li > .small-screen-mirror-trade > i,
   header > .small-screen-nav-list > ul > li > .small-screen-planning > i,
@@ -1262,12 +1410,34 @@ footer > .footer-copyright > p {
     color: #fff;
     text-decoration: none;
   }
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-mirror-trade-dropdown
+    > ul
+    > li,
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-planning-dropdown
+    > ul
+    > li,
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-about-dropdown
+    > ul
+    > li {
+      margin-bottom: 40px;
+  }
   header > .small-screen-nav-list ul > .small-screen-navlist-btns {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 20px;
-    gap: 20px;
+    margin-top: 40px;
   }
   header > .small-screen-nav-list ul > .small-screen-navlist-btns > a {
     display: flex;
@@ -1288,6 +1458,7 @@ footer > .footer-copyright > p {
     padding: 10px 0;
     border-radius: 20px;
     font-weight: bold;
+    margin-bottom: 30px;
   }
   header
     > .small-screen-nav-list
@@ -1468,8 +1639,8 @@ footer > .footer-copyright > p {
     flex-direction: column;
     padding: 0;
     width: 100%;
-    gap: 30px;
-    margin-bottom: 30px;
+    gap: 0;
+    margin-bottom: 0;
   }
   .why-to-copytrade > .why-to-copytrade-reasons-section {
     padding: 0;
@@ -1481,6 +1652,7 @@ footer > .footer-copyright > p {
     > .why-to-copytrade-individual-reasons {
     flex-direction: row;
     width: 100%;
+    margin-bottom: 30px;
   }
   .why-to-copytrade
     > .why-to-copytrade-reasons-section
@@ -1519,6 +1691,25 @@ footer > .footer-copyright > p {
   .why-to-copytrade > .why-to-copytrade-reasons-section > .why-to-copytrade-reasons > .why-to-copytrade-individual-reasons > span > p{
     font-size: 13px;
   }
+  /* POPULAR TRADERS */
+  .popular-traders{
+    padding: 60px 10px;
+  }
+  .popular-traders h1{
+    font-size: 30px;
+  }
+  .popular-traders > p{
+    font-size: 13px;
+    margin-bottom: 20px;
+  }
+  .swiper{
+    height: 25vh;
+  }
+
+
+
+
+
   /* HOW IT WORKS */
   .how-it-works {
     padding: 60px 10px;
@@ -1537,10 +1728,10 @@ footer > .footer-copyright > p {
   .how-it-works > .how-it-works-list {
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
   }
   .how-it-works > .how-it-works-list > .how-it-works-list-content {
     flex-direction: row;
+    margin-bottom: 20px;
   }
   .how-it-works > .how-it-works-list > .how-it-works-list-content > h1 {
     font-size: 18px;
@@ -1695,7 +1886,6 @@ footer > .footer-copyright > p {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
   }
   header > .small-screen-nav-list > ul > li > button {
     width: 100%;
@@ -1707,6 +1897,7 @@ footer > .footer-copyright > p {
     background-color: transparent;
     font-size: 14px;
     cursor: pointer;
+    margin-top: 40px;
   }
   header > .small-screen-nav-list > ul > li > .small-screen-mirror-trade > i,
   header > .small-screen-nav-list > ul > li > .small-screen-planning > i,
@@ -1832,12 +2023,34 @@ footer > .footer-copyright > p {
     color: #fff;
     text-decoration: none;
   }
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-mirror-trade-dropdown
+    > ul
+    > li,
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-planning-dropdown
+    > ul
+    > li,
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-about-dropdown
+    > ul
+    > li {
+    margin-bottom: 40px;
+  }
   header > .small-screen-nav-list ul > .small-screen-navlist-btns {
     display: flex;
     flex-direction: column;
     width: 100%;
-    margin-top: 20px;
-    gap: 20px;
+    margin-top: 40px;
   }
   header > .small-screen-nav-list ul > .small-screen-navlist-btns > a {
     display: flex;
@@ -1858,6 +2071,7 @@ footer > .footer-copyright > p {
     padding: 10px 0;
     border-radius: 20px;
     font-weight: bold;
+    margin-bottom: 30px;
   }
   header
     > .small-screen-nav-list
@@ -2039,7 +2253,7 @@ footer > .footer-copyright > p {
     flex-direction: row;
     padding: 0;
     width: 100%;
-    gap: 30px;
+    gap: 0;
     margin-bottom: 30px;
   }
   .why-to-copytrade > .why-to-copytrade-reasons-section {
@@ -2052,6 +2266,7 @@ footer > .footer-copyright > p {
     > .why-to-copytrade-individual-reasons {
     flex-direction: column;
     width: 100%;
+    margin-left: 30px;
   }
   .why-to-copytrade
     > .why-to-copytrade-reasons-section
@@ -2084,7 +2299,13 @@ footer > .footer-copyright > p {
     font-size: 30px;
     padding: 12px;
   }
-
+  /* POPULAR TRADERS */
+  .popular-traders{
+    padding: 80px 30px;
+  }
+  .swiper{
+    height: 40vh;
+  }
   /* HOW IT WORKS */
   .how-it-works {
     padding: 60px 30px;
@@ -2103,10 +2324,10 @@ footer > .footer-copyright > p {
   .how-it-works > .how-it-works-list {
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
   }
   .how-it-works > .how-it-works-list > .how-it-works-list-content {
     flex-direction: row;
+    margin-bottom: 20px;
   }
   .how-it-works > .how-it-works-list > .how-it-works-list-content > h1 {
     font-size: 22px;
@@ -2265,7 +2486,6 @@ footer > .footer-copyright > p {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
   }
   header > .small-screen-nav-list > ul > li > button {
     width: 100%;
@@ -2277,6 +2497,7 @@ footer > .footer-copyright > p {
     background-color: transparent;
     font-size: 18px;
     cursor: pointer;
+    margin-top: 40px;
   }
   header > .small-screen-nav-list > ul > li > .small-screen-mirror-trade > i,
   header > .small-screen-nav-list > ul > li > .small-screen-planning > i,
@@ -2401,6 +2622,29 @@ footer > .footer-copyright > p {
     font-size: 16px;
     color: #fff;
     text-decoration: none;
+  }
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-mirror-trade-dropdown
+    > ul
+    > li,
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-planning-dropdown
+    > ul
+    > li,
+  header
+    > .small-screen-nav-list
+    > ul
+    > li
+    > .small-screen-about-dropdown
+    > ul
+    > li {
+    margin-bottom: 40px;
   }
   header > .small-screen-nav-list ul > .small-screen-navlist-btns {
     display: flex;
@@ -2603,7 +2847,7 @@ footer > .footer-copyright > p {
     flex-direction: row;
     padding: 0;
     width: 100%;
-    gap: 30px;
+    gap: 0;
     margin-bottom: 30px;
   }
   .why-to-copytrade > .why-to-copytrade-reasons-section {
@@ -2615,6 +2859,7 @@ footer > .footer-copyright > p {
     > .why-to-copytrade-reasons
     > .why-to-copytrade-individual-reasons {
     width: 100%;
+    margin-left: 30px;
   }
   .why-to-copytrade
     > .why-to-copytrade-reasons-section
@@ -2648,6 +2893,10 @@ footer > .footer-copyright > p {
     padding: 12px;
   }
 
+  /* POPULAR TRADERS */
+  .popular-traders{
+    padding: 80px 50px;
+  }
   /* HOW IT WORKS */
   .how-it-works {
     padding: 60px 50px;
@@ -2666,7 +2915,7 @@ footer > .footer-copyright > p {
   .how-it-works > .how-it-works-list {
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    gap: 0;
   }
   .how-it-works > .how-it-works-list > .how-it-works-list-content {
     flex-direction: column;
@@ -2958,6 +3207,11 @@ footer > .footer-copyright > p {
     text-align: center;
   }
 
+  /* POPULAR TRADERS */
+  .popular-traders{
+    padding: 80px 60px;
+  }
+
   /* HOW IT WORKS */
   .how-it-works {
     padding: 60px;
@@ -2965,7 +3219,7 @@ footer > .footer-copyright > p {
   .how-it-works > .how-it-works-list {
     flex-direction: row;
     align-items: center;
-    gap: 20px;
+    gap: 0;
   }
   /* FAQ SECTION */
   .faq {

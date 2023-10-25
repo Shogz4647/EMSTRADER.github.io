@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" integrity="sha512-oAvZuuYVzkcTc2dH5z1ZJup5OmSQ000qlfRvuoTTiyTBjwX1faoyearj8KdMq0LgsBTHMrRuMek7s+CxF8yE+w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+     <!-- PRELOADER -->
+     <div id="preloader">
+      <div class="loader"></div>
+    </div>
+    <section class="form-section">
+      <div class="main-form">
+        <form>
+            <i class="bi bi-person-circle"></i>
+            <h2>Login</h2>
+            <p class="login-notice">Kindly get yourself <a href="register.html">registered</a> before you login.</p>
+
+            <input id="username" name="username" type="text" placeholder="Username"  required>
+            <h6 class="error-1"></h6>
+            <span class="error-icon-1"><i class="bi bi-exclamation-circle-fill"></i></span>
+
+
+            <input id="email" name="email" type="email" placeholder="Email Address"  required>
+            <h6 class="error-2"></h6>
+            <span class="error-icon-2"><i class="bi bi-exclamation-circle-fill"></i></span>
+
+            <input id="password" name="password" type="password" placeholder="Password"  required>
+            <h6 class="error-3"></h6>
+            <span class="error-icon-3"><i class="bi bi-exclamation-circle-fill"></i></span>
+
+            <div class="remember-me">
+                <input type="checkbox" name="checkbox" id="">
+                <p>Remember Me</p>
+            </div>
+
+            <a class="form-btn" href="dashboard.html"><input    type="submit" value="LOGIN"></a>
+        </form>
+      </div>
+    </section>
+    <script defer src="login.js"></script>
+  </body>
+</html>

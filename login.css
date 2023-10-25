@@ -1,0 +1,288 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "poppins", "sans-serif";
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: #000021;
+  }
+  html,body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+  }
+  /* PRELOADER */
+  #preloader {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10000;
+    transition: all 0.3s ease-out;
+    background-color: #000021;
+  }
+  #preloader.interval {
+    visibility: hidden;
+    opacity: 0;
+  }
+  #preloader .loader {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+  .loader:before,
+  .loader:after {
+    content: "";
+    border: 3.5px solid #bfcce5;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+  }
+  .loader:before {
+    opacity: 1;
+    animation: beforeWave 1s infinite linear;
+  }
+  
+  .loader:after {
+    opacity: 0;
+    animation: afterWave 1s infinite linear;
+  }
+  @keyframes afterWave {
+    0% {
+      transform: scale(0.5, 0.5);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1, 1);
+      opacity: 1;
+    }
+  }
+  @keyframes beforeWave {
+    0% {
+      transform: scale(1, 1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.5, 1.5);
+      opacity: 0;
+    }
+  }
+  
+  
+  /* FORM SECTION */
+  .form-section {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  .form-section > .main-form > form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #fff;
+    padding: 40px 40px 50px;
+    border-radius: 10px;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .form-section > .main-form > form > .bi-person-circle{
+      color: #000021;
+      font-size: 45px;
+      text-align: center;
+      margin: auto;
+  }
+  .form-section > .main-form > form > h2{
+      font-size: 22px;
+      color: #000021;
+      margin: auto;
+      margin-bottom: 10px;
+      font-weight: 600;
+  }
+  .form-section > .main-form > form > .login-notice {
+    font-size: 11px;
+    text-align: center;
+    width: 100%;
+    color: #7f7c9d;
+    margin-bottom: 10px;
+  }
+  .form-section > .main-form > form > .login-notice > a {
+    color: #ff7a7a;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .form-section > .main-form > form > #username,
+  .form-section > .main-form > form > #email,
+  .form-section > .main-form > form > #password {
+    width: 450px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid #8a889d;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+    font-size: 13px;
+    font-weight: 500;
+    color: #000021;
+    margin-bottom: 30px;
+    background-color: #fff;
+  }
+  .form-section > .main-form > form > .remember-me {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: flex-start;
+    width: 85%;
+  }
+  .form-section > .main-form > form > .remember-me > p {
+    font-size: 13px;
+    margin-left: 5px;
+    color: #7f80a0;
+  }
+  .form-section > .main-form > form > #username.error,
+  .form-section > .main-form > form > #email.error,
+  .form-section > .main-form > form > #password.error {
+    border: 1px solid red;
+  }
+  
+  .form-section > .main-form > form > #username:focus,
+  .form-section > .main-form > form > #email:focus,
+  .form-section > .main-form > form > #password:focus {
+    border: 1px solid dodgerblue;
+  }
+  .form-section > .main-form > form > #username::placeholder,
+  .form-section > .main-form > form > #email::placeholder,
+  .form-section > .main-form > form > #password::placeholder {
+    font-size: 15px;
+    font-weight: 500;
+    color: #7f80a0;
+  }
+  
+  .form-section > .main-form > form > .form-btn {
+    width: 100%;
+    padding: 15px 0;
+    background-color: dodgerblue;
+    color: #fff;
+    border: none;
+    box-shadow: 0px 5px 0px #00000035;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
+  .form-section > .main-form > form > .form-btn > input[type = submit]{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .form-section > .main-form > form > .terms {
+    font-size: 11px;
+    text-align: center;
+    width: 100%;
+    color: #7f7c9d;
+  }
+  .form-section > .main-form > form > .terms > span {
+    color: #ff7a7a;
+    font-weight: 700;
+  }
+
+  .error-icon-1 > .bi-exclamation-circle-fill.show,
+  .error-icon-2 > .bi-exclamation-circle-fill.show,
+  .error-icon-3 > .bi-exclamation-circle-fill.show {
+    opacity: 1;
+    visibility: visible;
+  }
+  .error-icon-1 > .bi-exclamation-circle-fill {
+    color: red;
+    position: absolute;
+    top: 218px;
+    right: 50px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .error-icon-2> .bi-exclamation-circle-fill {
+    color: red;
+    position: absolute;
+    top: 289px;
+    right: 50px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .error-icon-3 > .bi-exclamation-circle-fill {
+    color: red;
+    position: absolute;
+    top: 432px;
+    right: 50px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .error-1 {
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    top: 250px;
+    right: 40px;
+    font-weight: 400;
+    font-style: italic;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .error-2 {
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    top: 320px;
+    right: 40px;
+    font-weight: 400;
+    font-style: italic;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .error-3 {
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    top: 465px;
+    right: 40px;
+    font-weight: 400;
+    font-style: italic;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .error-1.show,
+  .error-2.show,
+  .error-3.show{
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  @media(max-width:576px){
+    .form-section > .main-form > form{
+      width: 80%;
+      margin: auto;
+      padding: 20px 15px;
+    }
+    .form-section > .main-form > form > #username, 
+    .form-section > .main-form > form > #email, 
+    .form-section > .main-form > form > #password{
+      width: 92%;
+      padding: 6px 10px;
+      font-size: 12px;
+    }
+  }

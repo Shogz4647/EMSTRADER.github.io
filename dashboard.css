@@ -1,0 +1,1341 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat", "sans-serif";
+}
+body {
+  overflow-x: hidden;
+  background-color: #edf5fe;
+}
+html,
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+/* PRELOADER */
+#preloader {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  z-index: 10000;
+  transition: all 0.3s ease-out;
+  background-color: #000021;
+}
+#preloader.interval {
+  visibility: hidden;
+  opacity: 0;
+}
+#preloader .loader {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.loader:before,
+.loader:after {
+  content: "";
+  border: 3.5px solid #bfcce5;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+}
+.loader:before {
+  opacity: 1;
+  animation: beforeWave 1s infinite linear;
+}
+
+.loader:after {
+  opacity: 0;
+  animation: afterWave 1s infinite linear;
+}
+@keyframes afterWave {
+  0% {
+    transform: scale(0.5, 0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+@keyframes beforeWave {
+  0% {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5, 1.5);
+    opacity: 0;
+  }
+}
+/* MAIN BODY */
+.main-body {
+  position: absolute;
+  right: 0;
+  top: 120px;
+  width: 80%;
+}
+.main-body > .heading {
+  font-size: 20px;
+  color: #000021;
+  margin-left: 40px;
+  font-weight: 500;
+}
+.main-body > .kyc-status {
+  margin: 30px 0 30px 40px;
+  font-size: 16px;
+  color: #000021;
+}
+.main-body > .kyc-status > span {
+  margin-left: 5px;
+  color: red;
+  font-weight: 600;
+}
+.main-body > .main-body-message {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+.main-body > .main-body-message > i {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #000021;
+}
+.main-body > .main-body-message > h3 {
+  font-size: 18px;
+  color: #000021;
+  font-weight: 500;
+}
+
+.main-body > .profile-dropdown {
+  position: absolute;
+  right: 30px;
+  background-color: #fff;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.21);
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10;
+}
+.main-body > .profile-dropdown.show {
+  opacity: 1;
+  visibility: visible;
+}
+.main-body > .profile-dropdown > .profile-dropdown-name {
+  display: flex;
+  align-items: center;
+  padding: 30px 30px 30px;
+  border-bottom: 1px solid #000021;
+}
+.main-body
+  > .profile-dropdown
+  > .profile-dropdown-name
+  > .profile-dropdown-name-details {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.main-body
+  > .profile-dropdown
+  > .profile-dropdown-name
+  > .profile-dropdown-name-details
+  > .dropdown-email {
+  font-size: 12px;
+  color: #000021;
+  font-weight: 400;
+}
+.main-body
+  > .profile-dropdown
+  > .profile-dropdown-name
+  > .profile-dropdown-name-details
+  > .dropdown-username {
+  font-size: 14px;
+  color: #000021;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+.main-body > .profile-dropdown > .profile-dropdown-links {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 30px 30px 40px;
+}
+.main-body > .profile-dropdown > .profile-dropdown-links > .view-profile,
+.main-body > .profile-dropdown > .profile-dropdown-links > .sign-out {
+  margin-bottom: 30px;
+}
+.main-body > .profile-dropdown > .profile-dropdown-name > i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: dodgerblue;
+  font-size: 20px;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.main-body > .profile-dropdown > .profile-dropdown-links > a {
+  text-decoration: none;
+  color: #040455;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.main-body > .profile-dropdown > .profile-dropdown-links > a > i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+.main-body > .main-body-info{
+    display: flex;
+    align-items: center;
+}
+.main-body > .trading-stats{
+    margin: 0 0 150px 40px;
+    background-color: #000021;
+    padding: 30px 15px;
+    border-radius: 10px;
+    height: 295px;
+    width: 70%;
+    position: relative;
+}
+.main-body > .trading-stats > .trading-stats-bars{
+   display: flex;
+   align-items: center;
+   padding: 0 30px;
+}
+.main-body > .trading-stats > .trading-stats-bars > .main-bars{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: center;
+}
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > h6{
+   color: #fff;
+   font-size: 10px;
+   font-weight: 300;
+}
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bar-label-1{
+    position: absolute;
+    bottom: 10px;
+    left: 75px;
+}
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bar-label-2{
+    position: absolute;
+    bottom: 10px;
+    left: 140px;
+}
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bar-label-3{
+    position: absolute;
+    bottom: 10px;
+    left: 210px;
+}
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bar-label-4{
+    position: absolute;
+    bottom: 10px;
+    left: 270px;
+}
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bar-label-5{
+    position: absolute;
+    bottom: 10px;
+    left: 320px;
+}
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bar-label-6{
+    position: absolute;
+    bottom: 10px;
+    left: 370px;
+}
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bar-label-7{
+    position: absolute;
+    bottom: 10px;
+    left: 430px;
+}
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bar-label-8{
+    position: absolute;
+    bottom: 10px;
+    left: 480px;
+}
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bar-label-9{
+    position: absolute;
+    bottom: 10px;
+    left: 550px;
+}
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bar-label-10{
+    position: absolute;
+    bottom: 10px;
+    left: 640px;
+}
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bar-label-11{
+    position: absolute;
+    bottom: 10px;
+    left: 720px;
+}
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bar-label-12{
+    position: absolute;
+    bottom: 10px;
+    left: 810px;
+}  
+
+
+
+
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-1{
+    background-color: dodgerblue;
+    width: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    height: 50px;
+    position: absolute;
+    bottom: 25px;
+    left: 93px;
+}
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-2{
+    background-color: dodgerblue;
+    width: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    height: 30px;
+    position: absolute;
+    bottom: 25px;
+    left: 160px;
+}
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-3{
+    background-color: dodgerblue;
+    width: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    height: 70px;
+    position: absolute;
+    bottom: 25px;
+    left: 225px;
+}
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-4{
+    background-color: dodgerblue;
+    width: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    height: 120px;
+    position: absolute;
+    bottom: 25px;
+    left: 280px;
+}
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-5{
+    background-color: dodgerblue;
+    width: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    height: 100px;
+    position: absolute;
+    bottom: 25px;
+    left: 328px;
+}
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-6{
+    background-color: dodgerblue;
+    width: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    height: 180px;
+    position: absolute;
+    bottom: 25px;
+    left: 380px;
+}
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-7{
+    background-color: dodgerblue;
+    width: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    height: 158px;
+    position: absolute;
+    bottom: 25px;
+    left: 435px;
+}
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-8{
+    background-color: dodgerblue;
+    width: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    height: 200px;
+    position: absolute;
+    bottom: 25px;
+    left: 495px;
+}
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-9{
+    background-color: dodgerblue;
+    width: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    height: 70px;
+    position: absolute;
+    bottom: 25px;
+    left: 575px;
+}
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-10{
+    background-color: dodgerblue;
+    width: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    height: 80px;
+    position: absolute;
+    bottom: 25px;
+    left: 660px;
+}
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-11{
+    background-color: dodgerblue;
+    width: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    height: 10px;
+    position: absolute;
+    bottom: 25px;
+    left: 740px;
+}
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-12{
+    background-color: dodgerblue;
+    width: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+    height: 10px;
+    position: absolute;
+    bottom: 25px;
+    left: 830px;
+} 
+
+
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-1:hover,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-2:hover,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-3:hover,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-4:hover,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-5:hover,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-6:hover,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-7:hover,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-8:hover,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-9:hover,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-10:hover,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-11:hover,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-12:hover{
+    background-color: rgb(20, 80, 141);
+    cursor: pointer;
+}
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-1 > .bar-info,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-2 > .bar-info,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-3 > .bar-info,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-4 > .bar-info,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-5 > .bar-info,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-6 > .bar-info,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-7 > .bar-info,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-8 > .bar-info,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-9 > .bar-info,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-10 > .bar-info,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-11 > .bar-info,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-12 > .bar-info{
+    background-color: #bfcce5;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding: 2px;
+    border-radius: 5px;
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1;
+}
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-1:hover .bar-info,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-2:hover .bar-info,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-3:hover .bar-info,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-4:hover .bar-info,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-5:hover .bar-info,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-6:hover .bar-info,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-7:hover .bar-info,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-8:hover .bar-info,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-9:hover .bar-info,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-10:hover .bar-info,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-11:hover .bar-info,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-12:hover .bar-info{
+    opacity: 1;
+    visibility: visible;
+}
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-1 > .bar-info > .info-box,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-2 > .bar-info > .info-box,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-3 > .bar-info > .info-box,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-4 > .bar-info > .info-box,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-5 > .bar-info > .info-box,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-6 > .bar-info > .info-box,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-7 > .bar-info > .info-box,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-8 > .bar-info > .info-box,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-9 > .bar-info > .info-box,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-10 > .bar-info > .info-box,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-11 > .bar-info > .info-box,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-12 > .bar-info > .info-box{
+    width: 6px;
+    height: 6px;
+    background-color: dodgerblue;
+    margin-right: 3px;
+    border: 1px solid #000021;
+}
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-1 > .bar-info > p,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-2 > .bar-info > p,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-3 > .bar-info > p,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-4 > .bar-info > p,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-5 > .bar-info > p,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-6 > .bar-info > p,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-7 > .bar-info > p,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-8 > .bar-info > p,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-9 > .bar-info > p,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-10 > .bar-info > p,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-11 > .bar-info > p,
+.main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-12 > .bar-info > p{
+    font-size: 10px;
+    color: #000021;
+    font-weight: 600;
+}
+.main-body > .trading-stats > h3{
+    font-size: 18px;
+    color: #edf5fe;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.main-body > .trading-stats > ul{
+    position: absolute;
+}
+.main-body > .trading-stats > ul > li{
+    list-style: none;
+    font-size: 10px;
+    color: #edf5fe ;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.main-body > .trading-stats > ul > li > span{
+    width: 810px;
+    border: 1px dotted #edf5fe;
+    display: flex;
+    margin-left: 7px;
+}
+.main-body > .main-body-balance {
+  background-color: #000021;
+  width: 40%;
+  margin: 0 0 60px 40px;
+  padding: 25px 0;
+  border-radius: 15px;
+}
+.main-body > .main-body-balance > .available-balance {
+  color: #fff;
+  font-weight: 400;
+  margin: 0 0 10px 40px;
+  font-size: 15px;
+}
+.main-body > .main-body-balance > h1 {
+  color: #fff;
+  font-weight: 500;
+  margin: 0 0 30px 40px;
+  font-size: 45px;
+}
+.main-body > .main-body-balance > span {
+  display: flex;
+  align-items: center;
+  margin: 0 0 10px 40px;
+}
+
+.main-body >.main-body-balance > span > .total-trade-group,
+.main-body >.main-body-balance > span > .total-profit-group {
+  display: flex;
+  align-items: center;
+}
+
+.main-body >.main-body-balance > span > .total-trade-group > .total-trade,
+.main-body > .main-body-balance > span > .total-profit-group > .total-profit {
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.main-body
+  > .main-body-balance
+  > span
+  > .total-trade-group
+  > .total-trade-amount,
+.main-body
+  > .main-body-balance
+  > span
+  > .total-profit-group
+  > .total-profit-amount {
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.main-body
+  >.main-body-balance
+  > span
+  > .total-trade-group
+  > .total-trade-amount {
+  margin-right: 120px;
+}
+.main-body > .main-body-balance > .trade-status {
+  margin: 30px 0 0 40px;
+  color: red;
+  font-size: 14px;
+  font-weight: 500;
+}
+footer {
+  border-top: 1px solid #000021;
+  padding: 20px 0;
+  width: 79.77%;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  background-color: #EDF5FE;
+}
+footer > p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000021;
+}
+/* MAIN BODY */
+
+/* SIDEBAR */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #000021;
+  height: 100%;
+  width: 15%;
+  padding: 20px 40px;
+  z-index: 100;
+}
+.sidebar > .sidebar-img > img {
+  width: 150px;
+  margin-bottom: 100px;
+}
+.sidebar > .sidebar-links {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 100%;
+}
+.sidebar > .extra-links {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  width: 100%;
+}
+.sidebar > .sidebar-links > li > a,
+.sidebar > .extra-links > li > a {
+  text-decoration: none;
+  color: #ede9e9;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+  margin-bottom: 45px;
+}
+.sidebar > .sidebar-links > li > .edit-profile{
+    margin-bottom: 100px;
+}
+.sidebar > .sidebar-links > li > a.active {
+  color: dodgerblue;
+}
+.sidebar > .sidebar-links > li > a:hover,
+.sidebar > .extra-links > li > a:hover {
+  color: dodgerblue;
+}
+.sidebar > .sidebar-links > li > a > i,
+.sidebar > .extra-links > li > a > i {
+  font-size: 20px;
+}
+.sidebar > .bi-x-lg {
+  font-size: 18px;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  display: none;
+}
+/* SIDEBAR */
+
+/* NAVBAR */
+nav {
+  border-bottom: 1px solid #000021;
+  background-color: #EDF5FE;
+  padding: 20px 0;
+  width: 79.77%;
+  right: 0;
+  top: 0;
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 10;
+}
+nav > .nav-btns {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  gap: 20px;
+}
+nav > .nav-btns > button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+nav > .nav-btns > .profile {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+}
+nav > .nav-btns > .profile > .profile-name {
+  display: flex;
+  align-items: center;
+  color: #000021;
+  font-weight: 600;
+  gap: 5px;
+}
+nav > .nav-btns > .profile > .profile-name > .bi-chevron-down {
+  margin-top: 2px;
+  transition: rotate 0.2s ease-in-out;
+}
+nav > .nav-btns > .profile > .profile-name > .bi-chevron-down.rotate {
+  rotate: 180deg;
+}
+nav > .nav-btns > button > .bi-person,
+nav > .nav-btns > button > .bi-bell {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000021;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+nav > .bi-list {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000021;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  display: none;
+}
+/* NAVBAR */
+
+@media (max-width: 576px) {
+  .sidebar {
+    /* display: none; */
+    width: 100%;
+    z-index: 100;
+    padding: 20px 15px;
+    transform: translateX(-100%);
+    transition: all 0.4s ease-in-out;
+  }
+  .sidebar.show {
+    transform: translateX(0);
+  }
+  .sidebar > .sidebar-links > li > a,
+  .sidebar > .extra-links > li > a {
+    font-size: 14px;
+  }
+  .sidebar > .sidebar-img > img {
+    width: 120px;
+  }
+  .sidebar > .bi-x-lg {
+    display: flex;
+    right: 45px;
+    font-size: 16px;
+  }
+  nav {
+    width: 100%;
+    padding: 8px 0;
+  }
+  .main-body > .profile-dropdown {
+    right: 10px;
+    top: -30px;
+    position: absolute;
+    padding-top: 40px;
+  }
+  .main-body {
+    width: 100%;
+    margin: 0;
+    overflow-x: scroll;
+  }
+  .main-body > .main-body-message > i {
+    font-size: 40px;
+  }
+  .main-body > .heading {
+    margin: 0 0 0 10px;
+  }
+  .main-body > .kyc-status {
+    margin-left: 10px;
+  }
+  .main-body > .main-body-balance {
+    margin: 0 0 0 10px;
+    width: 94%;
+  }
+  .main-body >  .main-body-balance > .available-balance,
+  .main-body >  .main-body-balance > h1,
+  .main-body >  .main-body-balance > span {
+    margin-left: 20px;
+  }
+  .main-body >  .main-body-balance > span > .total-trade-group,
+  .main-body >  .main-body-balance > span > .total-profit-group {
+    flex-direction: column;
+  }
+  .main-body >  .main-body-balance > span > .total-trade-group {
+    margin-right: 80px;
+  }
+  .main-body
+    >  .main-body-balance
+    > span
+    > .total-trade-group
+    > .total-trade-amount {
+    margin-right: 0;
+  }
+  .main-body >  .main-body-balance > .trade-status {
+    margin-left: 20px;
+  }
+  .main-body >  .main-body-info{
+    flex-direction: column;
+    width: 100%;
+  }
+  .main-body > .trading-stats{
+    width: 165%;
+    margin: 50px 0 150px 10px;
+  }
+  .main-body > .trading-stats > ul > li > span{
+    width: 880px;
+  }
+  .main-body > .trading-stats > .trading-stats-bars > .main-bars > h6{
+    font-size: 9px;
+  }
+  .main-body > .trading-stats > .trading-stats-bars > .main-bars > .bar-label-1 {
+    left: 30px;
+  }
+  .main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-1{
+    left: 45px;
+  }
+  .main-body > .trading-stats > .trading-stats-bars > .main-bars > .bar-label-2{
+    left: 77px;
+  }
+  .main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-2{
+    left: 90px;
+  }
+  .main-body > .trading-stats > .trading-stats-bars > .main-bars > .bar-label-3{
+    left: 130px;
+  }
+  .main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-3{
+    left: 140px;
+  }
+  .main-body > .trading-stats > .trading-stats-bars > .main-bars > .bar-label-4{
+    left: 170px;
+  }
+  .main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-4{
+    left: 176px;
+  }
+  .main-body > .trading-stats > .trading-stats-bars > .main-bars > .bar-label-5{
+    left: 205px;
+  }
+  .main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-5{
+    left: 210px;
+  }
+  .main-body > .trading-stats > .trading-stats-bars > .main-bars > .bar-label-6{
+    left: 240px;
+  }
+  .main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-6{
+    left: 248px;
+  }
+  .main-body > .trading-stats > .trading-stats-bars > .main-bars > .bar-label-7{
+    left: 280px;
+  }
+  .main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-7{
+    left: 285px;
+  }
+  .main-body > .trading-stats > .trading-stats-bars > .main-bars > .bar-label-8{
+    left: 310px;
+  }
+  .main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-8{
+    left: 320px;
+  }
+  .main-body > .trading-stats > .trading-stats-bars > .main-bars > .bar-label-9{
+    left: 350px;
+  }
+  .main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-9{
+    left: 370px;
+  }
+  .main-body > .trading-stats > .trading-stats-bars > .main-bars > .bar-label-10{
+    left: 410px;
+  }
+  .main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-10{
+    left: 420px;
+  }
+  .main-body > .trading-stats > .trading-stats-bars > .main-bars > .bar-label-11{
+    left: 455px;
+  }
+  .main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-11{
+    left: 475px;
+  }
+  .main-body > .trading-stats > .trading-stats-bars > .main-bars > .bar-label-12{
+    left: 510px;
+  }
+  .main-body > .trading-stats > .trading-stats-bars > .main-bars > .bars-12{
+    left: 520px;
+  }
+  footer {
+    width: 100%;
+  }
+  footer > p {
+    font-size: 12px;
+  }
+  nav > .nav-btns > .profile > .profile-name {
+    display: none;
+  }
+  nav > .nav-btns > button > .bi-bell {
+    display: none;
+  }
+  nav > .nav-btns {
+    margin: 0;
+  }
+  nav > .bi-list,
+  nav > .nav-btns > button > .bi-person {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+  }
+  nav > .bi-list {
+    left: 15px;
+    display: flex;
+  }
+  nav > .nav-btns > button > .bi-person {
+    margin-right: 15px;
+  }
+}
+
+/* MEDIUM SCREEN MEIDA QUERY */
+@media (min-width: 576px) and (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    z-index: 100;
+    padding: 20px 15px;
+    transform: translateX(-100%);
+    transition: all 0.4s ease-in-out;
+  }
+  .sidebar.show {
+    transform: translateX(0);
+  }
+  .sidebar > .sidebar-links > li > a,
+  .sidebar > .extra-links > li > a {
+    font-size: 16px;
+  }
+  .sidebar > .sidebar-img > img {
+    width: 130px;
+  }
+  .sidebar > .bi-x-lg {
+    display: flex;
+    right: 45px;
+    font-size: 18px;
+  }
+  nav {
+    width: 100%;
+    padding: 8px 0;
+  }
+  .main-body > .profile-dropdown {
+    right: 20px;
+    top: -30px;
+    padding-top: 40px;
+  }
+  .main-body {
+    width: 100%;
+    margin: 0;
+    overflow-x: scroll;
+  }
+  .main-body > .main-body-message > i {
+    font-size: 40px;
+  }
+  .main-body > .heading {
+    margin: 0 0 0 20px;
+  }
+  .main-body > .kyc-status {
+    margin-left: 20px;
+  }
+  .main-body > .main-body-balance {
+    margin: 0 0 0 20px;
+    width: 94%;
+  }
+  .main-body > .main-body-balance > .available-balance,
+  .main-body > .main-body-balance > h1,
+  .main-body > .main-body-balance > span {
+    margin-left: 40px;
+  }
+  .main-body > .main-body-balance > span > .total-trade-group {
+    margin-right: 200px;
+  }
+  .main-body
+    > .main-body-balance
+    > span
+    > .total-trade-group
+    > .total-trade-amount {
+    margin-right: 0;
+  }
+  .main-body > .main-body-balance > .trade-status {
+    margin-left: 40px;
+  }
+  .main-body > .trading-stats{
+    width: 145%;
+    margin: 50px 0 150px 10px;
+    height: 305px;
+  }
+  .main-body > .trading-stats > ul > li > span{
+    width: 1000px;
+  }
+  .main-body > .trading-stats > ul > li {
+    font-size: 12px;
+  }
+  .main-body > .trading-stats > .trading-stats-bars > .main-bars > h6{
+    font-size: 12px;
+  }
+  footer {
+    width: 100%;
+  }
+  footer > p {
+    font-size: 12px;
+  }
+  nav > .nav-btns > .profile > .profile-name {
+    display: none;
+  }
+  nav > .nav-btns > button > .bi-bell {
+    display: none;
+  }
+  nav > .nav-btns {
+    margin: 0;
+  }
+  nav > .bi-list,
+  nav > .nav-btns > button > .bi-person {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+  }
+  nav > .bi-list {
+    left: 20px;
+    display: flex;
+  }
+  nav > .nav-btns > button > .bi-person {
+    margin-right: 20px;
+  }
+}
+/* MEDIUM SCREEN MEIDA QUERY */
+
+/* LARGE SCREEN MEDIA QUERY */
+@media (min-width: 768px) and (max-width: 991px) {
+  .sidebar {
+    width: 100%;
+    z-index: 100;
+    padding: 20px 15px;
+    transform: translateX(-100%);
+    transition: all 0.4s ease-in-out;
+  }
+  .sidebar.show {
+    transform: translateX(0);
+  }
+  .sidebar > .sidebar-links > li > a,
+  .sidebar > .extra-links > li > a {
+    font-size: 18px;
+  }
+  .sidebar > .sidebar-img > img {
+    width: 150px;
+  }
+  .sidebar > .bi-x-lg {
+    display: flex;
+    right: 45px;
+    font-size: 18px;
+  }
+  nav {
+    width: 100%;
+    padding: 8px 0;
+  }
+  .main-body > .profile-dropdown {
+    right: 20px;
+    top: -30px;
+    padding-top: 40px;
+  }
+  .main-body {
+    width: 100%;
+    margin: 0;
+    overflow-x: scroll;
+  }
+  .main-body > .main-body-message > i {
+    font-size: 40px;
+  }
+  .main-body > .heading {
+    margin: 0 0 0 20px;
+  }
+  .main-body > .kyc-status {
+    margin-left: 20px;
+  }
+  .main-body > .main-body-balance {
+    margin: 0 0 0 20px;
+    width: 94%;
+  }
+  .main-body > .main-body-balance > .available-balance,
+  .main-body > .main-body-balance > h1,
+  .main-body > .main-body-balance > span {
+    margin-left: 40px;
+  }
+  .main-body > .main-body-balance > span > .total-trade-group {
+    margin-right: 360px;
+  }
+  .main-body
+    > .main-body-balance
+    > span
+    > .total-trade-group
+    > .total-trade-amount,
+  .main-body
+    > .main-body-balance
+    > span
+    > .total-profit-group
+    > .total-profit-amount,
+  .main-body > .main-body-balance > span > .total-profit-group > .total-trade,
+  .main-body > .main-body-balance > span > .total-profit-group > .total-profit {
+    font-size: 16px;
+  }
+  .main-body
+    > .main-body-balance
+    > span
+    > .total-trade-group
+    > .total-trade-amount {
+    margin-right: 0;
+  }
+  .main-body > .main-body-balance > .trade-status {
+    margin-left: 40px;
+    font-size: 16px;
+  }
+  .main-body > .trading-stats{
+    width: 120%;
+    margin: 50px 0 150px 10px;
+    height: 310px;
+  }
+  .main-body > .trading-stats > .trading-stats-bars > .main-bars > h6{
+    font-size: 13px;
+  }
+  .main-body > .trading-stats > ul > li{
+    font-size: 13px;
+  }
+  .main-body > .trading-stats > ul > li > span{
+    width: 1100px;
+  }
+  footer {
+    width: 100%;
+  }
+  footer > p {
+    font-size: 14px;
+  }
+  nav > .nav-btns > .profile > .profile-name {
+    display: none;
+  }
+  nav > .nav-btns > button > .bi-bell {
+    display: none;
+  }
+  nav > .nav-btns {
+    margin: 0;
+  }
+  nav > .bi-list,
+  nav > .nav-btns > button > .bi-person {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+  }
+  nav > .bi-list {
+    left: 20px;
+    display: flex;
+  }
+  nav > .nav-btns > button > .bi-person {
+    margin-right: 20px;
+  }
+}
+/* LARGE SCREEN MEDIA QUERY */
+/* X-LARGE SCREEN MEDIA QUERY */
+@media (min-width: 991px) and (max-width: 1200px) {
+  .sidebar {
+    width: 20%;
+  }
+  .main-body {
+    width: 75%;
+    overflow-x: scroll;
+  }
+  nav {
+    width: 73.2%;
+  }
+  footer{
+    width: 73.2%;
+  }
+  .main-body > .heading {
+    margin-left: 60px;
+  }
+  .main-body > .main-body-message > i {
+    font-size: 40px;
+  }
+  .main-body > .kyc-status {
+    margin-left: 60px;
+  }
+  .main-body > .main-body-balance {
+    margin: 0 0 0 60px;
+    width: 88%;
+  }
+  .main-body > .main-body-balance > .available-balance,
+  .main-body > .main-body-balance > h1,
+  .main-body > .main-body-balance > span {
+    margin-left: 40px;
+  }
+  .main-body > .main-body-balance > span > .total-trade-group {
+    margin-right: 280px;
+  }
+  .main-body
+    > .main-body-balance
+    > span
+    > .total-trade-group
+    > .total-trade-amount,
+  .main-body
+    > .main-body-balance
+    > span
+    > .total-profit-group
+    > .total-profit-amount,
+  .main-body > .main-body-balance > span > .total-profit-group > .total-trade,
+  .main-body > .main-body-balance > span > .total-profit-group > .total-profit {
+    font-size: 16px;
+  }
+  .main-body
+    > .main-body-balance
+    > span
+    > .total-trade-group
+    > .total-trade-amount {
+    margin-right: 0;
+  }
+  .main-body > .main-body-balance > .trade-status {
+    margin-left: 40px;
+    font-size: 16px;
+  }
+  .main-body > .trading-stats{
+    width: 120%;
+    margin: 50px 0 150px 60px;
+    height: 310px;
+  }
+  .main-body > .trading-stats > .trading-stats-bars > .main-bars > h6{
+    font-size: 13px;
+  }
+  .main-body > .trading-stats > ul > li{
+    font-size: 13px;
+  }
+  .main-body > .trading-stats > ul > li > span{
+    width: 1100px;
+  }
+}
+/* X-LARGE SCREEN MEDIA QUERY */
+
+/* XX-LARGE SCREEN MEDIA QUERY */
+@media (min-width: 1200px) and (max-width: 1499px) {
+  .sidebar {
+    width: 20%;
+  }
+  .main-body {
+    width: 75%;
+    overflow-x: scroll;
+  }
+  nav {
+    width: 73.2%;
+  }
+  footer{
+    width: 73.2%;
+  }
+  .main-body > .heading {
+    margin-left: 60px;
+  }
+  .main-body > .main-body-message > i {
+    font-size: 40px;
+  }
+  .main-body > .kyc-status {
+    margin-left: 60px;
+  }
+  .main-body > .main-body-balance {
+    margin: 0 0 0 60px;
+    width: 88%;
+  }
+  .main-body > .main-body-balance > .available-balance,
+  .main-body > .main-body-balance > h1,
+  .main-body > .main-body-balance > span {
+    margin-left: 40px;
+  }
+  .main-body > .main-body-balance > span > .total-trade-group {
+    margin-right: 280px;
+  }
+  .main-body
+    > .main-body-balance
+    > span
+    > .total-trade-group
+    > .total-trade-amount,
+  .main-body
+    > .main-body-balance
+    > span
+    > .total-profit-group
+    > .total-profit-amount,
+  .main-body > .main-body-balance > span > .total-profit-group > .total-trade,
+  .main-body > .main-body-balance > span > .total-profit-group > .total-profit {
+    font-size: 16px;
+  }
+  .main-body
+    > .main-body-balance
+    > span
+    > .total-trade-group
+    > .total-trade-amount {
+    margin-right: 0;
+  }
+  .main-body > .main-body-balance > .trade-status {
+    margin-left: 40px;
+    font-size: 16px;
+  }
+  .main-body > .trading-stats{
+    width: 120%;
+    margin: 50px 0 150px 60px;
+    height: 310px;
+  }
+  .main-body > .trading-stats > .trading-stats-bars > .main-bars > h6{
+    font-size: 13px;
+  }
+  .main-body > .trading-stats > ul > li{
+    font-size: 13px;
+  }
+  .main-body > .trading-stats > ul > li > span{
+    width: 1100px;
+  }
+}
+/* XX-LARGE SCREEN MEDIA QUERY */

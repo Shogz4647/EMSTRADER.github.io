@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="register.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.1/font/bootstrap-icons.min.css" integrity="sha512-oAvZuuYVzkcTc2dH5z1ZJup5OmSQ000qlfRvuoTTiyTBjwX1faoyearj8KdMq0LgsBTHMrRuMek7s+CxF8yE+w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+     <!-- PRELOADER -->
+     <div id="preloader">
+      <div class="loader"></div>
+    </div>
+    <section class="form-section">
+      <div class="main-form">
+        <form>
+            <i class="bi bi-person-circle"></i>
+            <h2>Registration</h2>
+            <p class="login-notice">Already registered ? Proceed to <a href="login.html">login</a></p>
+
+            <input id="full-name" name="fullname" type="text" placeholder="Fullname" required autofocus>
+            <h6 class="error-1"></h6>
+            <span class="error-icon-1"><i class="bi bi-exclamation-circle-fill"></i></span>
+
+            <input id="username" name="username" type="text" placeholder="Username"  required>
+            <h6 class="error-2"></h6>
+            <span class="error-icon-2"><i class="bi bi-exclamation-circle-fill"></i></span>
+
+
+            <input id="email" name="email" type="email" placeholder="Email Address"  required>
+            <h6 class="error-3"></h6>
+            <span class="error-icon-3"><i class="bi bi-exclamation-circle-fill"></i></span>
+
+            <input id="email2" name="email2" type="email" placeholder="Reconfirm Email"  required>
+            <h6 class="error-4"></h6>
+            <span class="error-icon-4"><i class="bi bi-exclamation-circle-fill"></i></span>
+
+
+            <input id="password" name="password" type="password" placeholder="Password"  required>
+            <h6 class="error-5"></h6>
+            <span class="error-icon-5"><i class="bi bi-exclamation-circle-fill"></i></span>
+
+            <div class="remember-me">
+                <input type="checkbox" name="checkbox" id="">
+                <p>Remember Me</p>
+            </div>
+
+            <a class="form-btn" href="dashboard.html"><input type="submit" value="REGISTER"></a>
+            <p class="terms">By clickiing the button you are agreeing to our <span>Terms and Services</span></p>
+        </form>
+      </div>
+    </section>
+    <script defer src="register.js"></script>
+  </body>
+</html>
