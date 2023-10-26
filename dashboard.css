@@ -1423,6 +1423,9 @@ nav > .bi-list {
     margin: 0;
     overflow-x: scroll;
   }
+  footer{
+    width: 100%;
+  }
   .main-body > .pro-traders-link{
     margin-left: 20px;
   }

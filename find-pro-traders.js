@@ -25,13 +25,11 @@ const copyBtn1 = document.querySelector('.main-body > .master-traders-section > 
 copyBtn1.onclick = function(){
     document.querySelector('.copy-btn-pop-up-section-1').classList.add('show')
     document.querySelector('.copy-btn-pop-up-section-1 > .copy-btn-pop-up-1').classList.add('show')
-    document.querySelector('body').classList.add('static')
 }
 const popUpCloseBtn1 = document.querySelector('.copy-btn-pop-up-section-1 > .copy-btn-pop-up-1 > .pop-up-confirm-section > .close');
 popUpCloseBtn1.onclick = function(){
     document.querySelector('.copy-btn-pop-up-section-1').classList.remove('show')
     document.querySelector('.copy-btn-pop-up-section-1 > .copy-btn-pop-up-1').classList.remove('show')
-    document.querySelector('body').classList.remove('static')
 }
 
 
@@ -40,13 +38,11 @@ const copyBtn2 = document.querySelector('.main-body > .master-traders-section > 
 copyBtn2.onclick = function(){
     document.querySelector('.copy-btn-pop-up-section-2').classList.add('show')
     document.querySelector('.copy-btn-pop-up-section-2 > .copy-btn-pop-up-2').classList.add('show')
-    document.querySelector('body').classList.add('static')
 }
 const popUpCloseBtn2 = document.querySelector('.copy-btn-pop-up-section-2 > .copy-btn-pop-up-2 > .pop-up-confirm-section > .close');
 popUpCloseBtn2.onclick = function(){
     document.querySelector('.copy-btn-pop-up-section-2').classList.remove('show')
     document.querySelector('.copy-btn-pop-up-section-2 > .copy-btn-pop-up-2').classList.remove('show')
-    document.querySelector('body').classList.remove('static')
 }
 
 
@@ -56,13 +52,11 @@ const copyBtn3 = document.querySelector('.main-body > .master-traders-section > 
 copyBtn3.onclick = function(){
     document.querySelector('.copy-btn-pop-up-section-3').classList.add('show')
     document.querySelector('.copy-btn-pop-up-section-3 > .copy-btn-pop-up-3').classList.add('show')
-    document.querySelector('body').classList.add('static')
 }
 const popUpCloseBtn3 = document.querySelector('.copy-btn-pop-up-section-3 > .copy-btn-pop-up-3 > .pop-up-confirm-section > .close');
 popUpCloseBtn3.onclick = function(){
     document.querySelector('.copy-btn-pop-up-section-3').classList.remove('show')
     document.querySelector('.copy-btn-pop-up-section-3 > .copy-btn-pop-up-3').classList.remove('show')
-    document.querySelector('body').classList.remove('static')
 }
 
 
@@ -71,13 +65,11 @@ const copyBtn4 = document.querySelector('.main-body > .master-traders-section > 
 copyBtn4.onclick = function(){
     document.querySelector('.copy-btn-pop-up-section-4').classList.add('show')
     document.querySelector('.copy-btn-pop-up-section-4 > .copy-btn-pop-up-4').classList.add('show')
-    document.querySelector('body').classList.add('static')
 }
 const popUpCloseBtn4 = document.querySelector('.copy-btn-pop-up-section-4 > .copy-btn-pop-up-4 > .pop-up-confirm-section > .close');
 popUpCloseBtn4.onclick = function(){
     document.querySelector('.copy-btn-pop-up-section-4').classList.remove('show')
     document.querySelector('.copy-btn-pop-up-section-4 > .copy-btn-pop-up-4').classList.remove('show')
-    document.querySelector('body').classList.remove('static')
 }
 
 
@@ -87,13 +79,11 @@ const copyBtn5 = document.querySelector('.main-body > .master-traders-section > 
 copyBtn5.onclick = function(){
     document.querySelector('.copy-btn-pop-up-section-5').classList.add('show')
     document.querySelector('.copy-btn-pop-up-section-5 > .copy-btn-pop-up-5').classList.add('show')
-    document.querySelector('body').classList.add('static')
 }
 const popUpCloseBtn5 = document.querySelector('.copy-btn-pop-up-section-5 > .copy-btn-pop-up-5 > .pop-up-confirm-section > .close');
 popUpCloseBtn5.onclick = function(){
     document.querySelector('.copy-btn-pop-up-section-5').classList.remove('show')
     document.querySelector('.copy-btn-pop-up-section-5 > .copy-btn-pop-up-5').classList.remove('show')
-    document.querySelector('body').classList.remove('static')
 }
 
 

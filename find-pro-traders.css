@@ -7,9 +7,6 @@
     overflow-x: hidden;
     background-color: #edf5fe;
   }
-  body.static{
-    overflow: hidden;
-  }
   /* COPY BTN POP UP */
   .copy-btn-pop-up-section-1,
   .copy-btn-pop-up-section-2,
@@ -1081,7 +1078,7 @@
     .copy-btn-pop-up-section-4 > .copy-btn-pop-up-4,
     .copy-btn-pop-up-section-5 > .copy-btn-pop-up-5{
       width: 90%;
-      height: 80%;
+      height: 90%;
     }
     .sidebar {
       width: 100%;
