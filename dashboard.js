@@ -19,3 +19,17 @@ navBtn.onclick = function(){
 navClear.onclick = function(){
     document.querySelector('.sidebar').classList.remove('show');
 }
+
+// REFER US
+const referBtn = document.querySelector('.main-body > .refer-us-section > .refer-us-input > button');
+referBtn.onclick = function(){
+   referBtn.classList.add('copied');
+   const referInput = document.querySelector('.refer-input-text');
+   referInput.select();
+   document.execCommand('copy');
+   window.getSelection().removeAllRanges();
+   
+   setTimeout(function(){
+    referBtn.classList.remove('copied');
+   }, 2500);
+};
